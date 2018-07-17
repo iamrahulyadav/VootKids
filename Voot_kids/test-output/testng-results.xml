@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="182240" started-at="2018-07-06T07:16:18Z" finished-at="2018-07-06T07:19:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="182240" started-at="2018-07-06T07:16:18Z" finished-at="2018-07-06T07:19:20Z">
+      <class name="com.viacom.smoketestscripts.Masthead_carouselScripts">
+        <test-method status="PASS" signature="suite()[pri:0, instance:com.viacom.smoketestscripts.Masthead_carouselScripts@6d24ffa1]" name="suite" is-config="true" duration-ms="10" started-at="2018-07-06T12:46:18Z" finished-at="2018-07-06T12:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.Masthead_carouselScripts@6d24ffa1]" name="setup" is-config="true" duration-ms="5817" started-at="2018-07-06T12:46:18Z" finished-at="2018-07-06T12:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="videoPlayback(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.Masthead_carouselScripts@6d24ffa1]" name="videoPlayback" duration-ms="170368" started-at="2018-07-06T12:46:23Z" data-provider="getData" finished-at="2018-07-06T12:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=rose, Runmode=Y, Email=dayanand.s@ifocussystec.in}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoPlayback -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.Masthead_carouselScripts@6d24ffa1]" name="tearDown" is-config="true" duration-ms="6035" started-at="2018-07-06T12:49:14Z" finished-at="2018-07-06T12:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.viacom.smoketestscripts.Masthead_carouselScripts@6d24ffa1]" name="close" is-config="true" duration-ms="0" started-at="2018-07-06T12:49:20Z" finished-at="2018-07-06T12:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.viacom.smoketestscripts.Masthead_carouselScripts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
