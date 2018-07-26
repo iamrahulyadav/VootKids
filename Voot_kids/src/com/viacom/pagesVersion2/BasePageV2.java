@@ -189,20 +189,34 @@ public class BasePageV2 {
 	     xl.setCellData("Videoplayback", "Date", rowno,String.valueOf(format.format(new Date())));		  
 	}
 
-	public static Map apiparams(int noparms) throws EncryptedDocumentException, InvalidFormatException, IOException
+	public static Map apiparams(int noparms,Xls_Reader xls,String apiname) throws EncryptedDocumentException, InvalidFormatException, IOException
 	{
-	    FileInputStream fis=new FileInputStream(VootConstants.EXCEL_PATHV2);
-		 Workbook wb=WorkbookFactory.create(fis);
-		 Sheet sheet = wb.getSheet("Api");   
+	    //FileInputStream fis=new FileInputStream(VootConstants.EXCEL_PATHV2);
+		 //Workbook wb=WorkbookFactory.create(fis);
+		 //Sheet sheet = wb.getSheet("Api");   
+		int rows=xls.getRowCount("Api");
 		HashMap<String,String> map=new HashMap<String,String>();
-		for(int i=1;i<=noparms;i++)
+		for(int rNum=2;rNum<=rows;rNum++)
+		{
+			String tcid=xls.getCellData("Api", "API Name", rNum);
+			if(tcid.equals(apiname))
+			{
+				for(int i=rNum;i<noparms+rNum;i++)
+				{
+				String apikey=xls.getCellData("Api", "Key", i);
+				String apivalue=xls.getCellData("Api", "Value", i);
+		        map.put(apikey, apivalue);	
+				}
+			}			
+		}
+		///HashMap<String,String> map=new HashMap<String,String>();
+		/*for(int i=1;i<=noparms;i++)
 		 {		
 	        String apikey = sheet.getRow(i).getCell(2).getStringCellValue();
 	        String apivalue=sheet.getRow(i).getCell(3).getStringCellValue();	
 	        map.put(apikey, apivalue);
-		}
-		return map;
-		
+		}*/
+		return map;		
 	}
 	
 	public static void swipetokidslogo(AndroidDriver driver) throws InterruptedException 

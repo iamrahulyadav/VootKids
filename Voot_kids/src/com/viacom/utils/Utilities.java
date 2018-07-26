@@ -36,8 +36,12 @@ import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.viacom.mail.FileFilterDateIntervalUtils;
+import com.viacom.pagesVersion2.BasePageV2;
 import com.viacom.pagesVersion2.HomePageV2;
+import com.viacom.smoketestscripts.BaseTestV2;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
@@ -57,7 +61,7 @@ import io.appium.java_client.touch.offset.PointOption;
  *                20 March 2017 - First created
  
  **************************************************************************************/
-public class Utilities {
+public class Utilities extends BaseTestV2{
 
 	private static final WebElement HomePageV2 = null;
 	public static AppiumDriverLocalService service;
@@ -75,6 +79,86 @@ public class Utilities {
 		  }
 		  return true;
 	}
+	
+	
+	//Scrubbing methods
+	public static void scrubtillend(AndroidDriver driver, WebElement seekbar) throws Exception
+	{
+		try
+		{
+			int startpoint = seekbar.getLocation().getX();
+			int xstart = startpoint + seekbar.getSize().getWidth();
+			int yend = seekbar.getLocation().getY();
+			TouchAction act = new TouchAction(driver);
+			act.press(PointOption.point(startpoint, yend)).moveTo(PointOption.point(xstart - 1, yend)).release()
+					.perform();
+
+			test.log(LogStatus.INFO, "Scrubbed till end of Audio Player");
+			BasePageV2.takeScreenshot();
+		}
+		catch (Exception e)
+		{
+			test.log(LogStatus.FAIL, "Unable to Scrub");
+			BasePageV2.takeScreenshot();
+		}
+	}
+
+	public static void scrubtillhalf(AndroidDriver driver, WebElement seekbar) throws Exception
+	{
+		try
+		{
+			int startpoint = seekbar.getLocation().getX();
+			int xstart = startpoint + seekbar.getSize().getWidth() / 2;
+			int yend = seekbar.getLocation().getY();
+			TouchAction act = new TouchAction(driver);
+			act.press(PointOption.point(startpoint, yend)).moveTo(PointOption.point(xstart - 1, yend)).release()
+					.perform();
+
+			test.log(LogStatus.INFO, "Scrubbed till end of Audio Player");
+			BasePageV2.takeScreenshot();
+		}
+		catch (Exception e)
+		{
+			test.log(LogStatus.FAIL, "Unable to Scrub");
+			BasePageV2.takeScreenshot();
+		}
+	}
+	
+	
+	public static void verticalSwipeCheckElement(AndroidDriver driver,String end) throws InterruptedException {
+	    //scrolling starts  
+	            int width  =driver.manage().window().getSize().getWidth();  
+	                int height = driver.manage().window().getSize().getHeight();               
+	                int startx = width/2;
+	                int endx = startx;
+	                int starty =  (int)(height*0.80) ;
+	                int endy = height/2;
+	               // int endy = (int) (height * 0.10);
+	                for(int i=0;i<4;i++) 
+	       {   
+	                 try{
+	                  TouchAction act=new TouchAction(driver);
+	                  (new TouchAction(driver))
+	                         .press(PointOption.point(startx, starty))
+	                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+	                          .moveTo(PointOption.point(startx, endy))
+	                         .release()
+	                         .perform();                 }
+	                 catch(Exception e)
+	                 {}
+	              if (driver.findElements(By.xpath(end)).size()>0)
+	        break; 
+	              
+	              
+	              /*if(i>10)
+	                  {
+	                   driver.setConnection(Connection.NONE);
+	             driver.setConnection(Connection.WIFI);
+	             Thread.sleep(60000);
+	                  }*/
+	      }
+	   }
+	
 	public static boolean explicitWaitClickable(WebDriver driver,WebElement element,int time)
 	 {
 		// driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
@@ -223,10 +307,10 @@ public class Utilities {
 		
 		 public static void startAppiumServer() {
 
-			  service=AppiumDriverLocalService.buildDefaultService();
-						/*new AppiumServiceBuilder().usingDriverExecutable(new File("C:\\Program Files (x86)\\Appium\\node.exe"))
+			  service=AppiumDriverLocalService.buildService(
+						new AppiumServiceBuilder().usingDriverExecutable(new File("C:\\Program Files (x86)\\Appium\\node.exe"))
 								.withAppiumJS(new File("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js"))
-								.withIPAddress("127.0.0.2").usingPort(4724));*/
+								.withIPAddress("127.0.0.3").usingPort(4725));
 				if (service.isRunning() == true) {
 					service.stop();
 				} else {
@@ -635,6 +719,124 @@ public class Utilities {
 				                  catch(Exception e)
 				                  {}                        
 				    }
+					public static void horizontalSwipeCarousalSlow(AndroidDriver driver)
+					   {
+					    
+					           int screenwidth  = driver.manage().window().getSize().getWidth(); 
+					               int screenheight = driver.manage().window().getSize().getHeight();
+					              
+					               int startx = (int) (screenwidth * (0.9));
+					               int endx = (int)(screenwidth *(0.5));
+					               int starty =  screenheight/2;
+					               int endy = screenheight/2;
+					            //swipe from right to left//
+					               
+					               try{
+					                   TouchAction act=new TouchAction(driver);
+					                   (new TouchAction(driver))
+					                          .press(PointOption.point(startx, starty))
+					                          .waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000)))
+					                           .moveTo(PointOption.point(endx, endy))
+					                          .release()
+					                          .perform();                 } 
+					                  catch(Exception e)
+					                  {}                        
+					   }
+					public static void horizontalSwipeCarousalSlow2(AndroidDriver driver)
+					   {
+					    
+					           int screenwidth  = driver.manage().window().getSize().getWidth(); 
+					               int screenheight = driver.manage().window().getSize().getHeight();
+					              
+					               int startx = (int) (screenwidth * (0.9));
+					               int endx = (int)(screenwidth *(0.2));
+					               int starty =  screenheight/2;
+					               int endy = screenheight/2;
+					            //swipe from right to left//
+					               
+					               try{
+					                   TouchAction act=new TouchAction(driver);
+					                   (new TouchAction(driver))
+					                          .press(PointOption.point(startx, starty))
+					                          .waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000)))
+					                           .moveTo(PointOption.point(endx, endy))
+					                          .release()
+					                          .perform();                 } 
+					                  catch(Exception e)
+					                  {}                        
+					   }
+					public static void horizontalSwipeReverseSlow(AndroidDriver driver)
+					   {
+					    
+					           int screenwidth  = driver.manage().window().getSize().getWidth(); 
+					               int screenheight = driver.manage().window().getSize().getHeight();
+					              
+					               int startx = (int) (screenwidth * (0.9));
+					               int endx = (int)(screenwidth *(0.5));
+					               int starty =  screenheight/2;
+					               int endy = screenheight/2;
+					            //swipe from right to left//
+					               
+					               try{
+					                   TouchAction act=new TouchAction(driver);
+					                   (new TouchAction(driver))
+					                          .press(PointOption.point(endx, starty))
+					                          .waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000)))
+					                           .moveTo(PointOption.point(startx, endy))
+					                          .release()
+					                          .perform();                 } 
+					                  catch(Exception e)
+					                  {}                        
+					   }
+					
+					public static boolean verticalSwipeAndFind(AndroidDriver driver,String end) throws InterruptedException {
+					    //scrolling starts  
+					            	int width  =driver.manage().window().getSize().getWidth();  
+					                int height = driver.manage().window().getSize().getHeight();               
+					                int startx = width/2;
+					                int endx = startx;
+					                int starty =  (int)(height*0.80) ;
+					                int endy = height/2;
+					               // int endy = (int) (height * 0.10);
+					                for(int i=0;i<height;i++) 
+					       {   
+					                 try{
+					                  TouchAction act=new TouchAction(driver);
+					                  (new TouchAction(driver))
+					                         .press(PointOption.point(startx, starty))
+					                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+					                         .moveTo(PointOption.point(startx, endy))
+					                         . release()
+					                         .perform();                 }
+					                 catch(Exception e)
+					                 {}
+					              if (driver.findElements(By.xpath(end)).size()>0)
+					            	  return true; 
+       
+					      }
+					      return false;
+					  }
+					
+					 public static void verticalSwipeReverse(AndroidDriver driver) throws InterruptedException {
+							//scrolling starts		
+						 int width  =driver.manage().window().getSize().getWidth();  
+				         int height = driver.manage().window().getSize().getHeight();               
+				         int startx = width/2;
+				         int endx = startx;
+				         int starty =  (int)(height*0.80) ;
+				         int endy = height/2;
+				        // int endy = (int) (height * 0.10); 
+				          try{
+				           TouchAction act=new TouchAction(driver);
+				           (new TouchAction(driver))
+				                  .press(PointOption.point(startx, endy))
+				                  .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+				                   .moveTo(PointOption.point(startx, starty))
+				                  .release()
+				                  .perform();                 }	
+				          catch(Exception e)
+				          {}
+					 }
 														
 }
 

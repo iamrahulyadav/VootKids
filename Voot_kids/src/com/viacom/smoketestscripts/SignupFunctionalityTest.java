@@ -27,7 +27,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 	String invalidEmailidErrmsg="This Email ID is not valid. Please choose another one.";
 	String alreadyRegesteredEmailErrmsg="This Email is already registered with us. Please choose another email";
 	String blankPwdErrmsg="Please enter password";
-	String blankSignupErr="Please enter Email or Mobile and Password";
+	String blankSignupErr="Please enter Mobile and Password";
 	String inavlidEmailId="hgjhs2jhjh@";
 	String validEmail=Utilities.generateEmailid();
 	String validMobileNumber=Utilities.generateMobileNumber();
@@ -38,6 +38,9 @@ public class SignupFunctionalityTest extends BaseTestV2{
 	String mobileNoError="Please enter a valid Mobile No.";
 	String invalidMoblile="526389";
 	String alreadyRegisteredMobileErr="This Mobile No. is already registered with us. Please choose another Mobile No.";
+	String testCase1="Verify Next button functionality (Invalid)";
+	String blankPhoneError = "Please Enter Mobile No.";
+	
 	
 	
 	@Test(dataProvider = "getData")
@@ -119,9 +122,19 @@ public class SignupFunctionalityTest extends BaseTestV2{
 				 int rowno13=xls13.getRowCount("Smoke_Results")+1;
 				xls13.setCellData("Smoke_Results", "Testcase Name",rowno13 , "Verify Mobile No. field in Sign Up page by entering already registered Mobile No. ");
 				
+				int rowno14=xls13.getRowCount("Smoke_Results")+1;
+				xls13.setCellData("Smoke_Results", "Testcase Name",rowno14 , testCase1);
+				
 				launchApp();
 				LaunchPageV2 launchPageV2=new LaunchPageV2(driver,test);
 				HomePageV2 homepagev2=new HomePageV2(driver,test);
+				
+				if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 5)){
+					homepagev2.logout();
+				}
+				else{
+					
+				}
 				
 				//Clicking on Sign Up
 				try{
@@ -142,7 +155,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 						String textHeader=launchPageV2.headerText.getText().toString();
 						if(textHeader.equalsIgnoreCase(PageTitle)) {
 							test.log(LogStatus.INFO, "Page Title found: "+textHeader);
-							BasePageV2.takeScreenshot();
+							//BasePageV2.takeScreenshot();
 						}
 						else {
 							test.log(LogStatus.INFO, "Page Title not found: "+textHeader);
@@ -154,7 +167,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 							String subTitle=launchPageV2.headerSubtitle.getText().toString();
 							if(subTitle.equalsIgnoreCase(screenTitle)) {
 								test.log(LogStatus.INFO, "Screen Title found: "+subTitle);
-								BasePageV2.takeScreenshot();
+								//BasePageV2.takeScreenshot();
 							}
 							else {
 								test.log(LogStatus.INFO, "Screen Title not found: "+subTitle);
@@ -167,7 +180,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 								String textPwd=launchPageV2.textAbovepwdTextField.getText().toString();
 								if(textPwd.equalsIgnoreCase(pwdText)) {
 									test.log(LogStatus.INFO, "Password Text found: "+textPwd);
-									BasePageV2.takeScreenshot();
+									//BasePageV2.takeScreenshot();
 								}
 								else {
 									test.log(LogStatus.FAIL, "Password Text not found: "+textPwd);
@@ -179,7 +192,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 									String textEmail=launchPageV2.textAboveEmailTextField.getText().toString();
 									if(textEmail.equalsIgnoreCase(emailText)) {
 										test.log(LogStatus.INFO, "Email Text found: "+textEmail);
-										BasePageV2.takeScreenshot();
+										//BasePageV2.takeScreenshot();
 									}
 									else {
 										test.log(LogStatus.FAIL, "Email Text not found: "+textEmail);
@@ -189,9 +202,9 @@ public class SignupFunctionalityTest extends BaseTestV2{
 								}
 									if(Utilities.explicitWaitVisible(driver, launchPageV2.textAboveMobilenumberTextField, 5)) {
 										String textMob=launchPageV2.textAboveMobilenumberTextField.getText().toString();
-										if(textMob.equalsIgnoreCase(mobileNumberText)) {
+										if(textMob.contains(mobileNumberText)) {
 											test.log(LogStatus.INFO, "Mobile number Text found: "+textMob);
-											BasePageV2.takeScreenshot();
+											//BasePageV2.takeScreenshot();
 										}
 										else {
 											test.log(LogStatus.FAIL, "Mobile number not found: "+textMob);
@@ -203,7 +216,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 											
 											if(launchPageV2.nextButton.isDisplayed()) {
 												test.log(LogStatus.INFO, "Next Button found ");
-												BasePageV2.takeScreenshot();
+												//BasePageV2.takeScreenshot();
 											}
 											else {
 												test.log(LogStatus.INFO, "Next Button found ");
@@ -215,7 +228,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 												
 												if(launchPageV2.Login.isDisplayed()) {
 													test.log(LogStatus.INFO, "Login link found ");
-													BasePageV2.takeScreenshot();
+													//BasePageV2.takeScreenshot();
 												}
 												else {
 													test.log(LogStatus.INFO, "Login link not found ");
@@ -227,7 +240,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 													String already=launchPageV2.alreadyHaveAccount.getText().toString();
 													if(already.equalsIgnoreCase(alreadAccount)) {
 														test.log(LogStatus.INFO, "Already Have Account? Text found: "+already);
-														BasePageV2.takeScreenshot();
+														//BasePageV2.takeScreenshot();
 													}
 													else {
 														test.log(LogStatus.FAIL, "Already Have Account? Text not found: "+already);
@@ -360,12 +373,14 @@ public class SignupFunctionalityTest extends BaseTestV2{
 					String invalidPwdError=launchPageV2.pwdErrorMsg.getText().toString();
 					test.log(LogStatus.INFO, "Actual Password Error: "+invalidPwdError);
 					test.log(LogStatus.INFO, "Expected Password Error: "+passwordError);
+					
 					if(invalidPwdError.equalsIgnoreCase(passwordError)) {
 						test.log(LogStatus.PASS, "Test Case 'Verify Password field data acceptance criteria in Sign Up page by giving invalid input' is passed");
 						BasePageV2.takeScreenshot();
-						homepagev2.smokeresults("Verify Password field data acceptance criteria in Sign Up page by giving invalid input",rowno4, "Fail");
+						homepagev2.smokeresults("Verify Password field data acceptance criteria in Sign Up page by giving invalid input",rowno4, "Pass");
 						
-					}else {
+					}
+					else {
 						test.log(LogStatus.FAIL, "Test Case 'Verify Password field data acceptance criteria in Sign Up page by giving invalid input' is fail");
 						BasePageV2.takeScreenshot();
 						homepagev2.smokeresults("Verify Password field data acceptance criteria in Sign Up page by giving invalid input",rowno4, "Fail");
@@ -375,11 +390,46 @@ public class SignupFunctionalityTest extends BaseTestV2{
 					BasePageV2.takeScreenshot();
 					homepagev2.smokeresults("Verify Password field data acceptance criteria in Sign Up page by giving invalid input",rowno4, "Fail");
 				}
+				
+			//	Please Enter Mobile No.
+				try {
+					if(Utilities.explicitWaitVisible(driver, homepagev2.bckbtn, 5)) 
+					if(homepagev2.bckbtn.isDisplayed()){
+						homepagev2.bckbtn.click();
+					}
+					else {
+						test.log(LogStatus.INFO, "Back button not displayed");
+						BasePageV2.takeScreenshot();
+					}
+					
+				}catch(Exception e) {
+					test.log(LogStatus.INFO, "Back button not displayed");
+					BasePageV2.takeScreenshot();
+				}
+				HomePageV2.signUpPagefromWelcomeScreen();
+				homepagev2.signUpwithoutMobile(validEmail, invalidPwd);
+				if(Utilities.explicitWaitVisible(driver, homepagev2.phoneNumberError, 3))
+					if(homepagev2.phoneNumberError.isDisplayed()){
+						String phoneError=homepagev2.phoneNumberError.getText().toString();
+						test.log(LogStatus.INFO, "Actual Phone Error: "+phoneError);
+						test.log(LogStatus.INFO, "Expected Phone Error: "+blankPhoneError);
+						if(phoneError.equalsIgnoreCase(blankPhoneError)) {
+							HomePageV2.smokeresults(testCase1, rowno14, "Pass");
+							test.log(LogStatus.PASS, "Test Case: "+testCase1+" is passed");
+							BasePageV2.takeScreenshot();
+						}
+						else {
+							HomePageV2.smokeresults(testCase1, rowno14, "Fail");
+							test.log(LogStatus.FAIL, "Test Case: "+testCase1+" is Fail");
+							BasePageV2.takeScreenshot();	
+						}
+					}
+				
 				//7. Verify the functionality of Eye icon in Password text field
 				try {
 					launchPageV2.showPwd.click();
 					String enteredPwd=launchPageV2.pwdText.getText().toString();
-					if(enteredPwd.equalsIgnoreCase(invalidPwd)) {
+					if(enteredPwd.contains(invalidPwd)) {
 						test.log(LogStatus.INFO, "Password visible after clicking on eye icon "+enteredPwd);
 					}else {
 						test.log(LogStatus.FAIL, "Test Case 'Verify the functionality of Eye icon in Password text field' is fail");
@@ -411,7 +461,7 @@ public class SignupFunctionalityTest extends BaseTestV2{
 				HomePageV2.signUpwithoutPwd(validEmail, validMobileNumber);	
 				try {
 					String blankPwdError=launchPageV2.pwdErrorMsg.getText().toString();
-					test.log(LogStatus.INFO, "Actual Password Error: "+blankPwdErrmsg);
+					test.log(LogStatus.INFO, "Actual Password Error: "+blankPwdError);
 					test.log(LogStatus.INFO, "Expected Password Error: "+blankPwdErrmsg);
 					if(blankPwdError.equalsIgnoreCase(blankPwdErrmsg)) {
 						test.log(LogStatus.PASS, "Test Case 'Verify Password field data acceptance criteria in Sign Up page by keeping field empty' is passed");
@@ -633,14 +683,14 @@ public class SignupFunctionalityTest extends BaseTestV2{
 						BasePageV2.takeScreenshot();
 						homepagev2.smokeresults("Verify Mobile No. field in Sign Up page by entering already registered Mobile No.",rowno13, "Pass");
 					}else {
-						test.log(LogStatus.PASS, "Test Case 'Verify Mobile No. field in Sign Up page by entering already registered Mobile No.' is Fail");
+						test.log(LogStatus.FAIL, "Test Case 'Verify Mobile No. field in Sign Up page by entering already registered Mobile No.' is Fail");
 						BasePageV2.takeScreenshot();
 						homepagev2.smokeresults("Verify Mobile No. field in Sign Up page by entering already registered Mobile No.",rowno13, "Fail");
 					}
 						
 				}
 				catch(Exception e){
-					test.log(LogStatus.PASS, "Test Case 'Verify Mobile No. field in Sign Up page by entering already registered Mobile No.' is Fail");
+					test.log(LogStatus.FAIL, "Test Case 'Verify Mobile No. field in Sign Up page by entering already registered Mobile No.' is Fail");
 					BasePageV2.takeScreenshot();
 					homepagev2.smokeresults("Verify Mobile No. field in Sign Up page by entering already registered Mobile No.",rowno13, "Fail");
 				}
@@ -653,30 +703,27 @@ public class SignupFunctionalityTest extends BaseTestV2{
 						BasePageV2.takeScreenshot();
 					}
 				}catch(Exception e) {}
-				try {
-				HomePageV2.signup();
-				if(homepagev2.profilepic.isDisplayed()) {
-					test.log(LogStatus.PASS, "Test Case 'Verify Next button functionality (Valid)' is passed");
-					BasePageV2.takeScreenshot();
-					homepagev2.smokeresults("Verify Next button functionality (Valid)",rowno12, "Pass");
+				HomePageV2.signuptestCaseIncluded();
+				Thread.sleep(3000);
+				if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 25)) {
+					if(homepagev2.profilepic.isDisplayed()) {
+						test.log(LogStatus.PASS, "Test Case 'Verify Next button functionality (Valid)' is passed");
+						BasePageV2.takeScreenshot();
+						homepagev2.smokeresults("Verify Next button functionality (Valid)",rowno12, "Pass");
+					}
+					
+					else {
+						test.log(LogStatus.FAIL, "Test Case 'Verify Next button functionality (Valid)' is Fail");
+						BasePageV2.takeScreenshot();
+						homepagev2.smokeresults("Verify Next button functionality (Valid)",rowno12, "Fail");
+					}
 				}
-				
 				else {
-					test.log(LogStatus.PASS, "Test Case 'Verify Next button functionality (Valid)' is passed");
-					BasePageV2.takeScreenshot();
-					homepagev2.smokeresults("Verify Next button functionality (Valid)",rowno12, "Pass");
+					
 				}
-				}
-				catch(Exception e) {
-					test.log(LogStatus.PASS, "Test Case 'Verify Next button functionality (Valid)' is fail");
-					BasePageV2.takeScreenshot();
-					homepagev2.smokeresults("Verify Next button functionality (Valid)",rowno12, "Fail");
-				}
+				
+				
 				HomePageV2.logout();
-				
-				
-				
-				
 	}
 	
 	@DataProvider

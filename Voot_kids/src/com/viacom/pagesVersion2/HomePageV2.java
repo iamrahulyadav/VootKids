@@ -18,6 +18,9 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.viacom.utils.GlobalVariables;
 import com.viacom.utils.Utilities;
+import com.viacom.utils.VootConstants;
+import com.viacom.utils.Xls_Reader;
+
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -39,6 +42,50 @@ public class HomePageV2 extends BasePageV2 {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	
+	public static String pin="1111";
+
+
+       	// Added by me parameters below once 
+	
+	@FindBy(xpath="//*[contains(@id='com.tv.vootkids:id/empty_view')]")
+	public WebElement onNowNothingHere;
+	
+	 
+	 @FindBy(xpath="//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/segmented_tray_tab']//android.widget.TextView[@text='Channels']")
+		public WebElement watchTab_channels;
+	
+	 @FindBy(xpath="//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/segmented_tray_tab']//android.widget.TextView[@text='On Now']")
+		public WebElement watchTab_onNOwTab;
+	 
+	 @FindBy(xpath="//android.widget.ImageView[@id='com.tv.vootkids:id/btn_profile_menu']")
+		public WebElement profileIcon;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@index='0']")
+	public WebElement onNow_tray_ViewGroup0;
+	
+	@FindBy(xpath=("//android.widget.ImageView[@resource-id = 'com.tv.vootkids:id/btn_back']"))
+	public WebElement Chennels_Back_btn;
+	
+	@FindBy(xpath="//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/segmented_tray_tab']//android.widget.TextView[@text='Characters']")
+	public WebElement channels_characters;
+	
+	@FindBy(xpath="//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/segmented_tray_tab']//android.widget.TextView[@text='Schedule']")
+	public WebElement channels_schedule;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/grid_title']")
+	public WebElement channels_characters_kids_card;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='CHANNELS']")
+	public WebElement channels_characters_CHANNELS_Text;
+	
+//	@FindBy(xpath="//*[contains(@class,'android.support.v7.widget.RecyclerView')][@index='0']")
+//	//@FindBy(xpath=("(//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/tabs']//android.widget.ImageView[@resource-id='com.tv.vootkids:id/tab_image'])[0]"))
+//	public WebElement mystuff_tab;
+	
+	// End by parameters adding
+
+
 	
 	@FindBy(id="com.tv.vootkids:id/btn_profile_menu")
 	public WebElement profilepic;
@@ -179,11 +226,124 @@ public class HomePageV2 extends BasePageV2 {
 	@FindBy(xpath="//android.widget.TextView[contains(@text,'LOGOUT')]")//Logout Button
 	public WebElement logout;
 	
-	@FindBy(xpath="//android.widget.Button[contains(@text,'yes')]")//Logout Button
+	@FindBy(xpath = "//android.widget.Button[contains(@text,'yes') or contains(@text,'YES')]") // Logout Button
 	public WebElement confirmLogout;
 		
 	@FindBy(xpath="//android.widget.Button[@text='SEE ALL']")
 	public WebElement seeAll;
+	
+	
+	@FindBy(id="com.tv.vootkids:id/btn_info_cancel")  //Cancel all notification after signing up for freshly installed app
+	public WebElement freshAppNotificationCancel;	
+	
+	@FindBy(id="com.tv.vootkids:id/container_pin_inner")
+	public WebElement parentalPin;
+	
+	@FindBy(id="com.tv.vootkids:id/error_message_phone_number")
+	public WebElement phoneNumberError;
+	
+	
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'Create Pin') or contains(@text,'CREATE PIN')]") // Create pin page
+	public WebElement createPinPage;
+	
+	
+	
+	@FindBy(xpath = "//android.widget.FrameLayout[@index='1']//android.widget.TextView[contains(@text,'Birth of Krishna')]")
+	public WebElement audioBook;
+
+	@FindBy(id = "com.tv.vootkids:id/button_preview")
+	public WebElement playAudiobookbutton;
+
+	@FindBy(id = "com.tv.vootkids:id/audio_skin_title")
+	public WebElement audioTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/button_play_pause_toggle")
+	public WebElement audioplayPause;
+
+	@FindBy(id = "com.tv.vootkids:id/forward_player")
+	public WebElement audioForward;
+
+	@FindBy(id = "com.tv.vootkids:id/back_ward")
+	public WebElement audiobackward;
+
+	@FindBy(id = "com.tv.vootkids:id/down_button_audio_skin")
+	public WebElement audiominiplayerSwitch;
+
+	@FindBy(id = "com.tv.vootkids:id/close_button_audio_skin")
+	public WebElement audioplayerClose;
+
+	@FindBy(id = "com.tv.vootkids:id/seek_bar")
+	public WebElement audioseekBar;
+
+	@FindBy(id = "com.tv.vootkids:id/favourite_button")
+	public WebElement audiofavouriteIcon;
+
+	@FindBy(id = "com.tv.vootkids:id/duration_player")
+	public WebElement audiorunningDuration;
+
+	@FindBy(id = "com.tv.vootkids:id/totla_duration_player")
+	public WebElement audiototalDuration;
+
+	@FindBy(id = "com.tv.vootkids:id/btn_playlist_expand")
+	public WebElement audioplaylistExpand;
+
+	@FindBy(xpath = "//*[contains(@class,'ActionBar')][@index='3']")
+	public WebElement listen;
+
+	@FindBy(xpath = "//*[contains(@class,'ActionBar')][@index='0']")
+	public WebElement hometab;
+
+	@FindBy(id = "com.tv.vootkids:id/btn_playlist_collapse")
+	public WebElement audioplaylistCollapse;
+
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'Related')]")
+	public WebElement related;
+
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'More From Author')]")
+	public WebElement morefromauthor;
+
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'Daily Picks')]")
+	public WebElement dailypicks;
+
+	@FindBy(id = "com.tv.vootkids:id/seek_bar")
+	public WebElement inlinePlayerSeekbar;
+
+	@FindBy(id = "com.tv.vootkids:id/title")
+	public WebElement inlinePlayerBookTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/play_pause")
+	public WebElement inlinePlayerPlaypause;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_title")
+	public WebElement plalistcontentTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_description")
+	public WebElement plalistcontentAuthor;
+
+	@FindBy(id = "com.tv.vootkids:id/listen_again")
+	public WebElement listenAgainBtn;
+
+	@FindBy(id = "com.tv.vootkids:id/next_image")
+	public WebElement AudioOverlay;
+
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'You might also like...')]")
+	public WebElement youmayalsoLike;
+
+	@FindBy(xpath = "//android.widget.ImageView[@index='2']")
+	public WebElement close;
+	
+	@FindBy(id = "com.tv.vootkids:id/category_icon")
+	public WebElement categoryicon;
+	
+	@FindBy(xpath="//android.support.v7.widget.RecyclerView[@index='0']/android.widget.FrameLayout[@index='0']//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/ln_item_container']/android.widget.TextView")
+	public List<WebElement> carousalNames;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt']")
+	public WebElement lastViewedTrayTitle;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_clear_txt']")
+	public WebElement lastViewedClear;
+
 	
 	
 	
@@ -271,6 +431,21 @@ public class HomePageV2 extends BasePageV2 {
 					System.out.println("Setings icon not found");
 				}
 			}catch(Exception e) {}
+			
+			try {
+				if(Utilities.explicitWaitVisible(driver, homepagev2.parentalPin, 20)) {
+					homepagev2.parentalPin.clear();
+					homepagev2.parentalPin.sendKeys(pin);
+				}else {
+					HomePageV2.reportFail("Parental pin text field not displayed");
+					BasePageV2.takeScreenshot();
+				}
+			}catch(Exception e) {}
+			
+			
+			//parentalPin
+			
+			
 			try {
 				if(Utilities.explicitWaitVisible(driver, homepagev2.logout, 20)) {
 					homepagev2.logout.click();
@@ -600,18 +775,32 @@ public static void signUpwithoutPwd(String email, String Mobile) {
 	}catch(Exception e) {}
 	}
 
-public static void signup() {
+public static void signup() throws Exception {
 	
 	LaunchPageV2 launchPageV2=new LaunchPageV2(driver,test);
 	HomePageV2 homepagev2=new HomePageV2(driver,test);
 	
 	String email=Utilities.generateEmailid();
 	String pwd="vinoth123";
-	String pin="1111";
+	//String pin="1234";
+	String mobileNumber= Utilities.generateMobileNumber();
+	
+	if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 5)) {
+		if(homepagev2.profilepic.isDisplayed()) {
+			test.log(LogStatus.INFO, "Already in home page");
+			HomePageV2.logout();
+			
+		}
+		else {
+			test.log(LogStatus.INFO, "Signing in");
+			BasePageV2.takeScreenshot();
+		}
+	}
+	
 	
 	try{
 		
-		if(Utilities.explicitWaitVisible(driver, launchPageV2.SignUpfromWelcomePage, 25)) {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.SignUpfromWelcomePage, 5)) {
 			test.log(LogStatus.INFO, "Clicking on 'JOIN FREE FOR 30 DAYS' Button");
 			BasePageV2.takeScreenshot();
 			launchPageV2.SignUpfromWelcomePage.click();
@@ -621,7 +810,7 @@ public static void signup() {
 	}
 	
 	try {
-		if(Utilities.explicitWaitVisible(driver, launchPageV2.emailText, 25)) {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.emailText, 5)) {
 			Thread.sleep(500);
 			launchPageV2.emailText.clear();
 			launchPageV2.emailText.sendKeys(email);
@@ -635,10 +824,28 @@ public static void signup() {
 			System.out.println("Email Text field not found");
 			
 	}catch(Exception e) {}
+	
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.mobilenumberText, 5)) {
+			Thread.sleep(500);
+			launchPageV2.mobilenumberText.clear();
+			launchPageV2.mobilenumberText.sendKeys(mobileNumber);
+			Thread.sleep(500);
+			try {
+				driver.hideKeyboard();
+				}
+				catch(Exception e) {}
+		}
+		else
+			System.out.println("Mobile number Text field not found");
+			
+	}catch(Exception e) {
+		
+	}
 			
 	
 	try {
-		if(Utilities.explicitWaitVisible(driver, launchPageV2.pwdText, 25)) {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.pwdText, 5)) {
 			Thread.sleep(500);
 			launchPageV2.pwdText.clear();
 			launchPageV2.pwdText.sendKeys(pwd);
@@ -702,42 +909,107 @@ public static void signup() {
 	}
 	catch(Exception e) {}
 	try {
-		if(Utilities.explicitWaitVisible(driver, launchPageV2.kidsName, 25))
-		launchPageV2.kidsName.clear();
-		launchPageV2.kidsName.sendKeys(Utilities.generateRandomName());
-		launchPageV2.DOB.click();
-		launchPageV2.DOBSelect.click();
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.kidsName, 25)) {
+			launchPageV2.kidsName.clear();
+			launchPageV2.kidsName.sendKeys(Utilities.generateRandomName());
+		}
+		else {
+			HomePageV2.reportFail("Kids name text field not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.DOB, 5)) {
+			launchPageV2.DOB.click();
+		}
+		else {
+			HomePageV2.reportFail("DOB Field not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.DOBSelect, 5)) {
+			launchPageV2.DOBSelect.click();
+		}
+		else {
+			HomePageV2.reportFail("Date selector not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
 		try {
 			driver.hideKeyboard();
 			}
 			catch(Exception e) {}
-		launchPageV2.next.click();
-		Thread.sleep(7000);
-		launchPageV2.next.click();
+		try{
+			launchPageV2.next.click();
+			
+			Thread.sleep(7000);
+			launchPageV2.next.click();
+			
+		}catch(Exception e) {
+			HomePageV2.reportFail("Next Button not displayed in Kids detail page");
+			BasePageV2.takeScreenshot();
+		}
+		
+		
 		
 		try {
-			for(int i=1;i<=6;i++) {
+			for(int i=1;i<=4;i++) {
 			WebElement element=driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id='com.tv.vootkids:id/character_icon'])["+i+"]"));
-			element.click();
+			if(Utilities.explicitWaitVisible(driver,element, 10)) {
+				element.click();
+			}
+			else {
+				HomePageV2.reportFail("Kids Characters not displayed");
+				BasePageV2.takeScreenshot();
+			}
+			
 			}
 			Thread.sleep(7000);
 			WebElement Skills = driver.findElement(By.xpath("//android.widget.TextView[@text='Story']/.."));
-			Skills.click();
+			if(Utilities.explicitWaitVisible(driver, Skills, 5)) {
+				Skills.click();
+			}
+			else {
+				HomePageV2.reportFail("Skills not displayed");
+				BasePageV2.takeScreenshot();
+			}
 			try {
 				Thread.sleep(2000);
 				launchPageV2.next.click();
 			}catch(Exception e) {
-				
+				HomePageV2.reportFail("Next button not displayed in character selection page");
+				BasePageV2.takeScreenshot();
 			}
 			if(Utilities.explicitWaitVisible(driver, launchPageV2.letsGo, 25)) {
 				launchPageV2.letsGo.click();
 			}
+			else {
+				HomePageV2.reportFail("lets Go button not displayed in character selection page");
+				BasePageV2.takeScreenshot();
+			}
+			
+			try {
+				for(int i=1; i<=5; i++) {
+					if(Utilities.explicitWaitVisible(driver, homepagev2.freshAppNotificationCancel, 5)) {
+						if(homepagev2.freshAppNotificationCancel.isDisplayed()) {
+							homepagev2.freshAppNotificationCancel.click();
+						}
+						else {
+							break;
+						}
+					}
+				}
+			}
+			catch(Exception e) {
+				
+			}
+			
 			if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 25)) {
 				if(homepagev2.profilepic.isDisplayed()) {
 					test.log(LogStatus.INFO, "Sign up Successful");
 				}
 				else {
-					test.log(LogStatus.INFO, "Sign up Un Successful");
+					HomePageV2.reportFail("Unable to signup with valid credentials");
+					BasePageV2.takeScreenshot();
 				}
 			}
 			
@@ -752,6 +1024,272 @@ public static void signup() {
 	
 }
 
+// Please dont use this method created this method for one of the test case
+public static void signuptestCaseIncluded() throws Exception {
+	
+	LaunchPageV2 launchPageV2=new LaunchPageV2(driver,test);
+	HomePageV2 homepagev2=new HomePageV2(driver,test);
+	String testCase="'Verify Next button functionality by entering both Email and Mobile No'";
+	
+	Xls_Reader xls = new Xls_Reader(VootConstants.EXCEL_PATHV2);	
+	 int rowno=xls.getRowCount("Smoke_Results")+1;
+	xls.setCellData("Smoke_Results", "Testcase Name",rowno , testCase);
+	
+	
+	String email=Utilities.generateEmailid();
+	String pwd="vinoth123";
+	//String pin="1234";
+	String mobileNumber= Utilities.generateMobileNumber();
+	
+	if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 5)) {
+		if(homepagev2.profilepic.isDisplayed()) {
+			test.log(LogStatus.INFO, "Already in home page");
+			HomePageV2.logout();
+			
+		}
+		else {
+			test.log(LogStatus.INFO, "Signing in");
+			BasePageV2.takeScreenshot();
+		}
+	}
+	
+	
+	try{
+		
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.SignUpfromWelcomePage, 5)) {
+			test.log(LogStatus.INFO, "Clicking on 'JOIN FREE FOR 30 DAYS' Button");
+			BasePageV2.takeScreenshot();
+			launchPageV2.SignUpfromWelcomePage.click();
+		}
+	}catch(Exception e) {
+		BasePageV2.takeScreenshot();
+	}
+	
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.emailText, 5)) {
+			Thread.sleep(500);
+			launchPageV2.emailText.clear();
+			launchPageV2.emailText.sendKeys(email);
+			Thread.sleep(500);
+			try {
+				driver.hideKeyboard();
+				}
+				catch(Exception e) {}
+		}
+		else
+			System.out.println("Email Text field not found");
+			
+	}catch(Exception e) {}
+	
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.mobilenumberText, 5)) {
+			Thread.sleep(500);
+			launchPageV2.mobilenumberText.clear();
+			launchPageV2.mobilenumberText.sendKeys(mobileNumber);
+			Thread.sleep(500);
+			try {
+				driver.hideKeyboard();
+				}
+				catch(Exception e) {}
+		}
+		else
+			System.out.println("Mobile number Text field not found");
+			
+	}catch(Exception e) {
+		
+	}
+			
+	
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.pwdText, 5)) {
+			Thread.sleep(500);
+			launchPageV2.pwdText.clear();
+			launchPageV2.pwdText.sendKeys(pwd);
+			Thread.sleep(500);
+			try {
+				driver.hideKeyboard();
+				}
+				catch(Exception e) {}
+		}
+		else
+			System.out.println("Password Text field not found");
+			
+	}catch(Exception e) {}	
+	
+	try {
+		driver.hideKeyboard();
+		}
+		catch(Exception e) {}
+	
+	try {
+		launchPageV2.nextButton.click();
+	}catch(Exception e) {}
+	
+	//Create pin
+	try {
+		Thread.sleep(5000);
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.pinContainer, 25)) {
+			if(launchPageV2.pinContainer.isDisplayed()) {
+					homepagev2.smokeresults(testCase, rowno , "Pass");
+					test.log(LogStatus.PASS, "Test Case: "+testCase+" is passed");
+				launchPageV2.pinContainer.clear();
+				launchPageV2.pinContainer.sendKeys(pin);
+			}
+		}
+		else {
+			homepagev2.reportFail("'Create Pin' Page not displayed");
+			homepagev2.smokeresults(testCase, rowno , "Fail");
+			System.out.println();
+		}
+			
+		try {
+			driver.hideKeyboard();
+			}
+			catch(Exception e) {}
+		try {
+			//launchPageV2.buttonCreatePin.click();
+		}catch(Exception e) {}
+	}
+	catch(Exception e) {}
+	
+	//Confirm pin
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.pinContainer, 3)) {
+			launchPageV2.pinContainer.clear();
+			launchPageV2.pinContainer.sendKeys(pin);
+		}
+		else {
+			System.out.println();
+		}
+		
+		try {
+			driver.hideKeyboard();
+			}
+			catch(Exception e) {}
+		
+		try {
+			launchPageV2.buttonCreatePin.click();
+		}catch(Exception e) {}
+	}
+	catch(Exception e) {}
+	Thread.sleep(2000);
+	
+	try {
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.kidsName, 25)) {
+			launchPageV2.kidsName.clear();
+			launchPageV2.kidsName.sendKeys(Utilities.generateRandomName());
+		}
+		else {
+			HomePageV2.reportFail("Kids name text field not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.DOB, 5)) {
+			launchPageV2.DOB.click();
+		}
+		else {
+			HomePageV2.reportFail("DOB Field not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
+		if(Utilities.explicitWaitVisible(driver, launchPageV2.DOBSelect, 5)) {
+			launchPageV2.DOBSelect.click();
+		}
+		else {
+			HomePageV2.reportFail("Date selector not displayed");
+			BasePageV2.takeScreenshot();
+		}
+		
+		try {
+			driver.hideKeyboard();
+			}
+			catch(Exception e) {}
+		try{
+			launchPageV2.next.click();
+			
+			Thread.sleep(7000);
+			launchPageV2.next.click();
+			
+		}catch(Exception e) {
+			HomePageV2.reportFail("Next Button not displayed in Kids detail page");
+			BasePageV2.takeScreenshot();
+		}
+		
+		
+		
+		try {
+			for(int i=1;i<=4;i++) {
+			WebElement element=driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id='com.tv.vootkids:id/character_icon'])["+i+"]"));
+			if(Utilities.explicitWaitVisible(driver,element, 5)) {
+				
+				//if(element.isDisplayed()) {
+					element.click();
+				/*}
+				else {
+					break;
+				}*/
+			}
+			else {
+				HomePageV2.reportFail("Kids Characters not displayed");
+				BasePageV2.takeScreenshot();
+			}
+			
+			}
+			Thread.sleep(7000);
+			WebElement Skills = driver.findElement(By.xpath("//android.widget.TextView[@text='Story']/.."));
+			if(Utilities.explicitWaitVisible(driver, Skills, 25)) {
+				Skills.click();
+			}
+			else {
+				HomePageV2.reportFail("Skills not displayed");
+				BasePageV2.takeScreenshot();
+			}
+			try {
+				Thread.sleep(2000);
+				launchPageV2.next.click();
+			}catch(Exception e) {
+				HomePageV2.reportFail("Next button not displayed in character selection page");
+				BasePageV2.takeScreenshot();
+			}
+			if(Utilities.explicitWaitVisible(driver, launchPageV2.letsGo, 25)) {
+				launchPageV2.letsGo.click();
+			}
+			else {
+				HomePageV2.reportFail("lets Go button not displayed in character selection page");
+				BasePageV2.takeScreenshot();
+			}
+			
+			try {
+				for(int i=1; i<=5; i++) {
+					if(Utilities.explicitWaitVisible(driver, homepagev2.freshAppNotificationCancel, 2)) {
+						if(homepagev2.freshAppNotificationCancel.isDisplayed()) {
+							homepagev2.freshAppNotificationCancel.click();
+						}
+						else {
+							break;
+						}
+					}
+				}
+			}
+			catch(Exception e) {
+				
+			}
+			
+			if(Utilities.explicitWaitVisible(driver, homepagev2.profilepic, 25)) {
+				if(homepagev2.profilepic.isDisplayed()) {
+					test.log(LogStatus.INFO, "Sign up Successful");
+				}
+				else {
+					HomePageV2.reportFail("Unable to signup with valid credentials");
+					BasePageV2.takeScreenshot();
+				}
+			}
+			
+		}catch(Exception e) {
+			
+		}
+	}catch (Exception e) {}
+}
 
 }
 

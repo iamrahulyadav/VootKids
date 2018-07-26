@@ -28,8 +28,8 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	public void loginTest(Hashtable<String, String> data) throws Exception{
 	if(GlobalVariables.break_Flag)
 		throw new SkipException("Skipping the test as it reaches to Home page");
-	test = rep.startTest("Verify Create Profile screen Functionality");
-	test.log(LogStatus.INFO, "Starting the test for Verifying the favorites selection functionality: "+VootConstants.DEVICE_NAME);
+	test = rep.startTest("Verify Voot Kids Create Profile screen Functionality");
+	test.log(LogStatus.INFO, "Starting the test for Verifying the Create Profile Screen functionality: "+VootConstants.DEVICE_NAME);
 	// Check run mode
 
 	if (!DataUtil.isExecutable(xls, testName) || data.get("Runmode").equals("N")) {
@@ -125,8 +125,10 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	
 	String un=data.get("Email");
 	String pwd=data.get("Password");
+	
+	homepagev2.signup();
      //launchpagev2.loginToVoot(un,pwd);
-	launchpagev2.registerWithoutMobileNumberSubscription();
+	//launchpagev2.registerWithoutMobileNumberSubscription();
 	//driver.startActivity(new Activity("com.tv.vootkids.ui.home", "VKHomeActivity"));
 	//clicking on user profile
 	
@@ -141,10 +143,17 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	else
 		BasePageV2.reportFail("Not able to click on Create new Link");
 	
+
+	//Enter Pin
+	
+	
+	if(Utilities.explicitWaitVisible(driver, launchpagev2.parentPinContainer, 20))
+    launchpagev2.parentPinContainer.sendKeys("1111");
 	
 	//take snap to check navigated to next screen
 	BasePageV2.takeScreenshot();
 	test.log(LogStatus.INFO, "Clicking on back button to navigate back to Switch Profile Screen");
+	
 	//Click back and check whether navigating to Switch Profile screen
 	if(Utilities.explicitWaitClickable(driver, launchpagev2.createProfileBackButton, 20))
 		launchpagev2.createProfileBackButton.click();
@@ -166,6 +175,18 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 		else
 			BasePageV2.reportFail("Not able to click on Create new Link");
 	
+		
+		
+		
+		
+		//Enter Pin
+		
+		
+		if(Utilities.explicitWaitVisible(driver, launchpagev2.parentPinContainer, 20))
+			launchpagev2.parentPinContainer.sendKeys("1111");
+		/*else
+			BasePageV2.reportFail("Parent Pin screen is not displayed");*/
+		
 		
 		//Blank name and dob
 		test.log(LogStatus.INFO,"Tapping on Next button without entering in Kids name and Dob field");
@@ -219,7 +240,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 		
 				
 		//Click ok in calendar pop up
-		if(Utilities.explicitWaitVisible(driver, launchpagev2.calendarOkButton, 20))
+		if(Utilities.explicitWaitClickable(driver, launchpagev2.calendarOkButton, 20))
 			{
 			 BasePageV2.reportPass("Testcase : 'Verify the click functionality on the DOB field:' is passed");
 			 BasePageV2.smokeresults("", dobrow, "Pass");
@@ -236,8 +257,8 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 		 BasePageV2.smokeresults("", invaliddobrow, "Pass");
 		
 		}
-	else
-		BasePageV2.reportFail("Age should be above zero message is not displayed when selecting todays date");	
+	/*else
+		BasePageV2.reportFail("Error message is displayed");	*/
 		
 		
 		//Select Dob	valid
@@ -277,7 +298,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 				
 	// Enter Kids name in Kids name field
 	if(Utilities.explicitWaitVisible(driver, launchpagev2.kidsNameField, 20))
-		launchpagev2.kidsNameField.sendKeys("VinothTest1");
+		launchpagev2.kidsNameField.sendKeys("VinothTest");
 	else
 		BasePageV2.reportFail("Kids name field is not displayed in Create Profile screen");
 	driver.pressKeyCode(AndroidKeyCode.BACK);
@@ -398,7 +419,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	test.log(LogStatus.INFO, "Selecting 4 favorite characters and click on Next button");
 	BasePageV2.takeScreenshot();
 	
-////Click on next button(3) in create profile screen
+//Click on next button(3) in create profile screen
 	if(Utilities.explicitWaitVisible(driver, launchpagev2.createProfileScreenNextButton, 20))
 		launchpagev2.createProfileScreenNextButton.click();
 	else
@@ -454,6 +475,8 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 		BasePageV2.reportFail("Error message is displayed / Not able to create Profile  when clicking next button after selecting 5 characters");
 	
 	
+	if(Utilities.explicitWaitVisible(driver, launchpagev2.parentPinContainer, 20))
+		launchpagev2.parentPinContainer.sendKeys("1111");
 	//cHECKING FUNCTIONALITY of Create Another Hyperlink whether navigating to first screen
 	if(Utilities.explicitWaitVisible(driver, launchpagev2.createProfileTellUsFirstScreen, 20))
 	{
@@ -487,7 +510,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 		BasePageV2.reportFail("Not able to click Ok button on calendar pop up");
 	
 	Thread.sleep(1000);
-	driver.pressKeyCode(AndroidKeyCode.BACK);
+	//driver.pressKeyCode(AndroidKeyCode.BACK);
 	test.log(LogStatus.INFO, "Entering all valid data and navigating to next screen");
 	BasePageV2.takeScreenshot();
 	//Click on next button in create profile screen
@@ -526,7 +549,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 			{
 	    	  test.log(LogStatus.INFO, "Entering the space between firstname and lastname in the Kids name field");
 	    	  launchpagev2.kidsNameField.clear();
-	    	  launchpagev2.kidsNameField.sendKeys("Vinoth"+Keys.SPACE+"Test2");
+	    	  launchpagev2.kidsNameField.sendKeys("VinothTest Test");
 			}
 		else
 			BasePageV2.reportFail("Kids name field is not displayed in Create Profile screen");
@@ -615,6 +638,10 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	 else
 		 BasePageV2.reportFail("Settings button icon is not present in Switch Profile Screen");
 	 
+	 
+	 if(Utilities.explicitWaitVisible(driver, launchpagev2.parentPinContainer, 20))
+			launchpagev2.parentPinContainer.sendKeys("1111");
+	 
 	 if(Utilities.explicitWaitVisible(driver, launchpagev2.profilesSectionInSettingsScreen, 20))
 	  {
 		 launchpagev2.profilesSectionInSettingsScreen.click();
@@ -636,7 +663,7 @@ public class VootKidsCreateProfileScreenFunctionalityTest extends BaseTestV2{
 	  }
 	 else
 		 BasePageV2.reportFail("Profiles Section is not present in Settings Screen");
-String profname="";
+String profname=null;
 	 if(Utilities.explicitWaitVisible(driver, launchpagev2.editProfileScreen, 20)) 
 	{
     	test.log(LogStatus.INFO, "Getting the profile name and deleting the profile");
@@ -701,7 +728,7 @@ String profname="";
 			  }
 	  }
 	 else
-		 BasePageV2.reportFail(" Not Navigated to List of Profiles screen after deleting a profile");
+		 BasePageV2.reportFail("Not Navigated to List of Profiles screen after deleting a profile");
 	
 }
 	@DataProvider

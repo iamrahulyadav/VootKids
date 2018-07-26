@@ -219,6 +219,28 @@ public class LaunchPageV2 extends BasePageV2{
 	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Create new')]/..//android.widget.ImageView")
 	public WebElement createNewIcon;
 	
+
+	
+	@FindBy(xpath= "(//android.widget.TextView[@resource-id='com.tv.vootkids:id/list_text'])[1]")
+	public WebElement switchProfileScreenProfileName;
+	
+	
+	@FindBy(xpath= "//android.view.ViewGroup//android.widget.ImageView[@resource-id='com.tv.vootkids:id/list_icon']")
+	public WebElement switchProfileScreenProfileAvatar;
+	
+	@FindBy(xpath= "//android.view.ViewGroup//android.widget.ImageView[@resource-id='com.tv.vootkids:id/list_selected_icon']")
+	public WebElement switchProfileScreenSelectedProfile;
+	
+
+	@FindBy(xpath= "//android.view.ViewGroup//android.widget.ImageView[@resource-id='com.tv.vootkids:id/list_icon' and @index='0']")
+	public WebElement unselectedProfileAvatar;
+	
+	@FindBy(xpath= "//android.widget.ImageView[@resource-id='com.tv.vootkids:id/list_icon' and @index='0']//following-sibling::android.widget.TextView[@resource-id='com.tv.vootkids:id/list_text']")
+	public WebElement unselectedProfileName;
+	
+	@FindBy(xpath= "//android.widget.ImageView[@resource-id='com.tv.vootkids:id/list_selected_icon' and @index='0']//following-sibling::android.widget.TextView[@resource-id='com.tv.vootkids:id/list_text']")
+	public WebElement selectedProfileName;
+	
 	
 	@FindBy(id= "android:id/date_picker_header_year")
 	public WebElement calendarYearPick;
@@ -226,8 +248,90 @@ public class LaunchPageV2 extends BasePageV2{
 	@FindBy(xpath= "//android.widget.TextView[contains(@text,'2018')]")
 	public WebElement currentYear;
 	
+	@FindBy(xpath= "(//android.widget.TextView[@resource-id='com.tv.vootkids:id/list_text'])[2]")
+	public WebElement switchProfileScreenCreatedProfileName;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'1999')]")
+	public WebElement year1999;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'2019')]")
+	public WebElement year2019;
 	@FindBy(id= "com.tv.vootkids:id/name_edit_text")
 	public WebElement kidsNameField;
+	
+	@FindBy(xpath= "//android.widget.EditText[@text=\"Kid's name\"]")
+	public WebElement kidsNameFieldText;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Create your buddy') and @resource-id='com.tv.vootkids:id/toolbar_sub_title']")
+	public WebElement createYourBuddyScreen;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'ALL SET') and @resource-id='com.tv.vootkids:id/toolbar_title']")
+	public WebElement createProfileFinalScreenSubTitle;
+	
+	@FindBy(xpath= "//android.widget.ImageView[@resource-id='com.tv.vootkids:id/main_buddy_icon']")
+	public WebElement createProfileFinalScreenMainBuddyIcon;
+	
+	
+	@FindBy(xpath= "//android.widget.TextView[@resource-id='com.tv.vootkids:id/tv_name']")
+	public WebElement createProfileFinalScreenKidsProfileName;
+	
+	
+	@FindBy(xpath= "//android.widget.TextView[@resource-id='com.tv.vootkids:id/tv_age']")
+	public WebElement createProfileFinalScreenKidsAge;
+		
+	
+	@FindBy(xpath= "//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/buddy_list']//android.widget.LinearLayout//android.widget.ImageView[@resource-id='com.tv.vootkids:id/buddy_icon']")
+	public List<WebElement> avatarImagesAtCreateYourBuddyScreen;
+	
+	@FindBy(xpath= "//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/buddy_color_list']//android.view.ViewGroup")
+	public List<WebElement> coloursList;
+	
+	@FindBy(xpath= "//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/buddy_color_list']//android.view.ViewGroup")
+	public WebElement colourInBuddyScreen;
+	
+	
+	
+	@FindBy(id= "com.tv.vootkids:id/btn_edit_profile")
+	public WebElement editProfileBuddyButton;
+	
+	@FindBy(id= "com.tv.vootkids:id/btn_parent_zone")
+	public WebElement parentZoneButton;
+	
+	@FindBy(id= "com.tv.vootkids:id/btn_cancel")
+	public WebElement switchProfileCancelButton;
+	
+	@FindBy(xpath= "//android.widget.TextView[@resource-id='com.tv.vootkids:id/toolbar_title' and @text='EDIT PROFILE BUDDY']")
+	public WebElement editProfileBuddyScreenToolBarTitle;
+	
+	@FindBy(xpath= "//android.widget.TextView[@resource-id='com.tv.vootkids:id/toolbar_sub_title' and @text='Edit your buddy']")
+	public WebElement editProfileBuddyScreenSubTitle;
+	
+	
+	@FindBy(xpath= "//android.widget.Button[@resource-id='com.tv.vootkids:id/next_btn' or @text='DONE']")
+	public WebElement editProfileBuddyScreenDoneButton;
+	
+	
+	
+		
+	@FindBy(xpath= "//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/buddy_list']//android.widget.LinearLayout//android.widget.ImageView[@resource-id='com.tv.vootkids:id/buddy_icon']")
+	public WebElement avatarImageAtCreateYourBuddyScreen;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'CREATE PROFILE') and @resource-id='com.tv.vootkids:id/toolbar_title']")
+	public WebElement createProfileSecondScreenToolBarTitle;
+	
+	
+
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'about your kid')]")
+	public WebElement createProfileTellUsFirstScreenAboutKid;
+	
+
+	
+	@FindBy(xpath= "//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/indicator_layout']/android.widget.ImageView")
+	public List<WebElement> threepaginationindicator;
+	
+	@FindBy(xpath= "//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/indicator_layout']/android.widget.ImageView")
+	public WebElement paginationindicator;
 	
 	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Please enter Name')]")
 	public WebElement enterNameErrorMessage;
@@ -241,8 +345,7 @@ public class LaunchPageV2 extends BasePageV2{
 	@FindBy(xpath= "//android.widget.TextView[@text='Age should be above zero']")
 	public WebElement ageAboveZeroErrorMessage;
 	
-	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Create your buddy')]")
-	public WebElement createYourBuddyScreen;
+
 	
 	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Tell us')]")
 	public WebElement createProfileTellUsFirstScreen;
@@ -250,7 +353,9 @@ public class LaunchPageV2 extends BasePageV2{
 	@FindBy(id= "com.tv.vootkids:id/next_btn")
 	public WebElement createProfileScreenNextButton;
 	
-	
+
+	@FindBy(id = "com.tv.vootkids:id/input_pinView") // Parent Pin container
+	public WebElement parentPinContainer;
 	@FindBy(id= "com.tv.vootkids:id/next_btn")
 	public WebElement signUpScreenNextButton;
 	
@@ -313,6 +418,26 @@ public class LaunchPageV2 extends BasePageV2{
 	public WebElement profilesScreen;
 
 
+	@FindBy(id= "com.tv.vootkids:id/btn_code_manually")
+	public WebElement entercodeManuallyLink;
+	
+	@FindBy(id= "com.tv.vootkids:id/btn_switch_to_auto")
+	public WebElement autoCodedetectBtn;
+	
+	
+	
+	@FindBy(id= "com.tv.vootkids:id/header_text")
+	public WebElement otpPageHeader;
+	
+	@FindBy(id= "com.tv.vootkids:id/header_subtitle")
+	public WebElement otpPageHeaderSubtitle;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Not Received your OTP?')]")
+	public WebElement notRecievedOtp;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Resend OTP')]")
+	public WebElement resendOTP;
+	
 /*	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Create your buddy')]")
 	public WebElement createAnotherProfileLink;
 	*/

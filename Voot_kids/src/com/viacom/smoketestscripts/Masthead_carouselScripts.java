@@ -55,7 +55,7 @@ public class Masthead_carouselScripts extends BaseTestV2 {
 		HomePageV2 homepagev2=new HomePageV2(driver,test);
 		//Api call to verify Home mystuffCarousel
 		String url_mystuffCarousel=xls.getCellData("Api", 1, 4);
-	    Map map = BasePageV2.apiparams(4);
+	    Map map = BasePageV2.apiparams(4, xls, "MystuffCarousel");
 	    System.out.println(map);
 		System.out.println(url_mystuffCarousel);
 		Response resp_mystuffCarousel=Utilities.requestUtilitypost(url_mystuffCarousel, map); 

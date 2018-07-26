@@ -32,7 +32,7 @@ public class BaseTestV2 {
 	public AndroidDriver driver;
 
 	public ExtentReports rep=ExtentManager.getInstance();
-	public ExtentTest test;
+	public static ExtentTest test;
 	protected Xls_Reader xls = new Xls_Reader(VootConstants.EXCEL_PATHV2);
 	public int networkCount = 0;
 	public int sessionCount = 0;
@@ -83,7 +83,7 @@ public class BaseTestV2 {
 		capabilities.setCapability("VERSION", VootConstants.DEVICE_VERSION);
 	    capabilities.setCapability("deviceName", VootConstants.DEVICE_NAME);
 		capabilities.setCapability("platformName", VootConstants.PLATFORM_NAME);
-//		capabilities.setCapability("udid","RS50042139aca" );
+		capabilities.setCapability("udid","RS50042139aca" );
 		capabilities.setCapability("newCommandTimeout", 60 * 5);
 
 		if (VootConstants.ENVIRONMENT.equalsIgnoreCase("PreProduction")) {
