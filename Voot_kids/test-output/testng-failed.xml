@@ -76,245 +76,99 @@
       <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest"/>
     </classes>
   </test> <!-- Verify4 -->
-  <test name="Test1(failed)">
-    <classes>
-      <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest">
-        <methods>
-          <include name="suite"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
-      <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
-      <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
-      <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
-        <methods>
-          <include name="signUpFunctionalityCreateProfilePage"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
-      <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
-      <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
-      <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
-      <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
-      <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
-      <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test name="Test2(failed)">
-    <classes>
-      <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest">
-        <methods>
-          <include name="suite"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
-      <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
-      <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
-      <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
-      <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
-      <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
-      <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
-      <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
-      <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
-        <methods>
-          <include name="signUpFunctionality"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
-      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
-      <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
-    </classes>
-  </test> <!-- Test2(failed) -->
   <test name="VerifyCardMetadata(failed)">
     <classes>
       <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest">
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
-          <include name="VerifyCardTypeInMyStuff"/>
+          <include name="VerifyCardTypeInMyStuff" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -325,77 +179,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
-          <include name="VerifyCardTypeInMyStuff"/>
+          <include name="VerifyCardTypeInMyStuff" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -406,77 +276,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="VerifyCharacterShowCard"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
+          <include name="VerifyCharacterShowCard" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -487,77 +373,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
-          <include name="VerifyCharactersInCharactersTray"/>
+          <include name="VerifyCharactersInCharactersTray" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -568,77 +470,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
-          <include name="VerifyCountOfAssetsInCarousal"/>
+          <include name="VerifyCountOfAssetsInCarousal" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -649,77 +567,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
-          <include name="VerifyDisplayCardOrderInCarousal"/>
+          <include name="VerifyDisplayCardOrderInCarousal" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -730,77 +664,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="VerifyLastViewedUI" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
-        <methods>
-          <include name="VerifyLastViewedUI"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -811,77 +761,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
-          <include name="VerifyHorizontalSwipe"/>
+          <include name="VerifyHorizontalSwipe" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -892,77 +858,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
-          <include name="VerifyLastViewedUI"/>
+          <include name="VerifyLastViewedUI" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -973,77 +955,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -1054,77 +1052,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -1135,77 +1149,93 @@
         <methods>
           <include name="suite"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>
@@ -1215,78 +1245,94 @@
       <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest">
         <methods>
           <include name="suite"/>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
-      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
       <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+      <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
       <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
       <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </classes>

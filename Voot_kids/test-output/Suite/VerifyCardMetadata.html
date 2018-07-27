@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>VerifyCardMetadata</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 25 20:44:37 IST 2018</td>
+<td>Started on:</td><td>Thu Jul 26 20:21:17 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (0 ms)</td>
+<tr><td>Total time:</td><td>150 seconds (150646 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,37 +68,30 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.viacom.smoketestscripts.VerifyCardMetadata.setup()'><b>setup</b><br>Test class: com.viacom.smoketestscripts.VerifyCardMetadata</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace459718907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace459718907'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+<td title='com.viacom.smoketestscripts.VerifyCardMetadata.VerifyCardTypeInMyStuff()'><b>VerifyCardTypeInMyStuff</b><br>Test class: com.viacom.smoketestscripts.VerifyCardMetadata<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: 256: Verify the type of cards in Watch tab is is FAIL
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyCardMetadata.VerifyCardTypeInMyStuff(VerifyCardMetadata.java:197)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533544826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1533544826'><pre>java.lang.AssertionError: 256: Verify the type of cards in Watch tab is is FAIL
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyCardMetadata.VerifyCardTypeInMyStuff(VerifyCardMetadata.java:197)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -118,35 +111,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>0</td>
-<td>com.viacom.smoketestscripts.VerifyCardMetadata@659499f1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.viacom.smoketestscripts.VerifyCardMetadata.tearDown()'><b>tearDown</b><br>Test class: com.viacom.smoketestscripts.VerifyCardMetadata</td>
-<td></td>
-<td>0</td>
-<td>com.viacom.smoketestscripts.VerifyCardMetadata@659499f1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.viacom.smoketestscripts.VerifyCardMetadata.VerifyCardTypeInMyStuff()'><b>VerifyCardTypeInMyStuff</b><br>Test class: com.viacom.smoketestscripts.VerifyCardMetadata<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
-
-}</td>
-<td></td>
-<td>0</td>
+<td>138</td>
 <td>com.viacom.smoketestscripts.VerifyCardMetadata@659499f1</td></tr>
 </table><p>
 </body>

@@ -166,7 +166,7 @@ public class SettingsPageV2 extends BasePageV2 {
 	
 	// Edit Profile Page validating
 	
-	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/profile_image']")
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/btn_profile_menu']")
 	public WebElement setiingsProfileEditProBckBtn;
 	
 	@FindBy(xpath="//android.widget.TextView[@text='EDIT PROFILE']")
@@ -184,6 +184,14 @@ public class SettingsPageV2 extends BasePageV2 {
 	@FindBy(xpath="//android.widget.TextView[@text='Date of birth']")
 	public WebElement settingsProEditProDateOfBirth;
 	
+	@FindBy(xpath="//android.widget.EditText[@resource-id='com.tv.vootkids:id/name_edit_text']")
+	public WebElement editProNameEditText;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Please enter Name']")
+	public WebElement editProErrorMsgForName;
+	
+	@FindBy(xpath="//android.widget.Button[@text='DONE']")
+	public WebElement editproDoneBtn;
 	
 	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/selected_tick']")
 	public WebElement settingsProfileSelectedTick;
@@ -195,9 +203,46 @@ public class SettingsPageV2 extends BasePageV2 {
 	@FindBy(xpath ="//android.widget.TextView[@text='CREATE PROFILE']")
 	public WebElement settingsProfileCreatProfileTile;
 	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/dob_date_et']")
+	public WebElement settingsProfileEditProDateEdit;
+	
+	@FindBy(id="com.tv.vootkids:id/dob_month_et")
+	public WebElement settingsProfileEditProMonthEdit;
 	
 	
-//	///////////// Ending Setting Elements values  //////////////
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/dob_year_et']")
+	public WebElement settingsProfileEditProYearEdit;
+	
+  //Date Of The Birth fileds
+	@FindBy(xpath="//android.widget.TextView[@resoure-id='com.tv.vootkids:id/dob_year_et']")
+	public WebElement settingsDateOfYear;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'2019')]")
+	public WebElement Year2019;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'2005')]")
+	public WebElement year2005;
+	
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'1999')]")
+	public WebElement year1999;
+	
+	@FindBy(id= "android:id/date_picker_header_year")
+	public WebElement calendarYearPick;
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/back_btn_settings']")
+	public WebElement editProBackBtn;
+	
+	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button1']")
+	public WebElement calenderOkBtn;
+	
+	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button2']")
+	public WebElement calendercancelBtn;
+	
+	@FindBy(xpath="//android.widget.Button[@text='YES']")
+	public WebElement prodelPopYesBtn;
+	
+	@FindBy(xpath="//android.widget.Button[@text='NO']")
+	public WebElement prodelPopNoBtn;
 	
 	
 	

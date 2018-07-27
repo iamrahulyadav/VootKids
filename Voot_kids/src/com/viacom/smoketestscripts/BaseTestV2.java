@@ -83,7 +83,7 @@ public class BaseTestV2 {
 		capabilities.setCapability("VERSION", VootConstants.DEVICE_VERSION);
 	    capabilities.setCapability("deviceName", VootConstants.DEVICE_NAME);
 		capabilities.setCapability("platformName", VootConstants.PLATFORM_NAME);
-		capabilities.setCapability("udid","RS50042139aca" );
+		capabilities.setCapability("udid","ZW2225DTSJ" );
 		capabilities.setCapability("newCommandTimeout", 60 * 5);
 
 		if (VootConstants.ENVIRONMENT.equalsIgnoreCase("PreProduction")) {

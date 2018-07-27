@@ -1,58 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="15" failed="0" total="15" passed="0">
+<testng-results skipped="0" failed="13" total="15" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="437" started-at="2018-07-25T15:14:36Z" finished-at="2018-07-25T15:14:37Z">
+  <suite name="Suite" duration-ms="27767828" started-at="2018-07-26T14:32:27Z" finished-at="2018-07-26T22:15:15Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="62" started-at="2018-07-25T15:14:36Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Test1" duration-ms="422941" started-at="2018-07-26T14:32:27Z" finished-at="2018-07-26T14:39:30Z">
       <class name="com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:36Z" finished-at="2018-07-25T20:44:36Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="setup" is-config="true" duration-ms="27510" started-at="2018-07-26T20:02:27Z" finished-at="2018-07-26T20:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="signUpFunctionalityCreateProfilePage(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="signUpFunctionalityCreateProfilePage" duration-ms="0" started-at="2018-07-25T20:44:36Z" data-provider="getData" finished-at="2018-07-25T20:44:36Z">
+        <test-method status="PASS" signature="signUpFunctionalityCreateProfilePage(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="signUpFunctionalityCreateProfilePage" duration-ms="389792" started-at="2018-07-26T20:02:55Z" data-provider="getData" finished-at="2018-07-26T20:09:25Z">
           <params>
             <param index="0">
               <value>
@@ -65,60 +24,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpFunctionalityCreateProfilePage -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:36Z" finished-at="2018-07-25T20:44:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest@741a8937]" name="tearDown" is-config="true" duration-ms="5615" started-at="2018-07-26T20:09:25Z" finished-at="2018-07-26T20:09:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.signupFunctionalityCreateProfilePageTest -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="16" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Test2" duration-ms="706376" started-at="2018-07-26T14:39:30Z" finished-at="2018-07-26T14:51:17Z">
       <class name="com.viacom.smoketestscripts.SignupFunctionalityTest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="setup" is-config="true" duration-ms="6088" started-at="2018-07-26T20:09:30Z" finished-at="2018-07-26T20:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="signUpFunctionality(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="signUpFunctionality" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="signUpFunctionality(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="signUpFunctionality" duration-ms="694556" started-at="2018-07-26T20:09:36Z" data-provider="getData" finished-at="2018-07-26T20:21:11Z">
           <params>
             <param index="0">
               <value>
@@ -129,101 +47,99 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpFunctionality -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.SignupFunctionalityTest@66f57048]" name="tearDown" is-config="true" duration-ms="5729" started-at="2018-07-26T20:21:11Z" finished-at="2018-07-26T20:21:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.SignupFunctionalityTest -->
     </test> <!-- Test2 -->
-    <test name="VerifyCardMetadata" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="VerifyCardMetadata" duration-ms="150646" started-at="2018-07-26T14:51:17Z" finished-at="2018-07-26T14:53:47Z">
       <class name="com.viacom.smoketestscripts.VerifyCardMetadata">
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="setup" is-config="true" duration-ms="6088" started-at="2018-07-26T20:21:17Z" finished-at="2018-07-26T20:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCardTypeInMyStuff(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="VerifyCardTypeInMyStuff" duration-ms="138936" started-at="2018-07-26T20:21:23Z" data-provider="getData" finished-at="2018-07-26T20:23:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[256: Verify the type of cards in Watch tab is is FAIL]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 256: Verify the type of cards in Watch tab is is FAIL
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyCardMetadata.VerifyCardTypeInMyStuff(VerifyCardMetadata.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCardTypeInMyStuff -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="tearDown" is-config="true" duration-ms="5620" started-at="2018-07-26T20:23:42Z" finished-at="2018-07-26T20:23:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="VerifyCardTypeInMyStuff(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="VerifyCardTypeInMyStuff" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
-
-}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCardTypeInMyStuff -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardMetadata@659499f1]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- com.viacom.smoketestscripts.VerifyCardMetadata -->
     </test> <!-- VerifyCardMetadata -->
-    <test name="VerifyCardTypeInMyStuff" duration-ms="16" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="VerifyCardTypeInMyStuff" duration-ms="50906" started-at="2018-07-26T14:53:47Z" finished-at="2018-07-26T14:54:38Z">
       <class name="com.viacom.smoketestscripts.VerifyCardTypeInMyStuff">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@48aca48b]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@b9b00e0]" name="setup" is-config="true" duration-ms="6088" started-at="2018-07-26T20:23:47Z" finished-at="2018-07-26T20:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCardTypeInMyStuff(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@b9b00e0]" name="VerifyCardTypeInMyStuff" duration-ms="39224" started-at="2018-07-26T20:23:54Z" data-provider="getData" finished-at="2018-07-26T20:24:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.NullPointerException
+	at com.viacom.smoketestscripts.VerifyCardTypeInMyStuff.VerifyCardTypeInMyStuff(VerifyCardTypeInMyStuff.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -244,36 +160,23 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCardTypeInMyStuff(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@48aca48b]" name="VerifyCardTypeInMyStuff" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
-
-}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCardTypeInMyStuff -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@48aca48b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCardTypeInMyStuff@b9b00e0]" name="tearDown" is-config="true" duration-ms="5590" started-at="2018-07-26T20:24:33Z" finished-at="2018-07-26T20:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VerifyCardTypeInMyStuff -->
     </test> <!-- VerifyCardTypeInMyStuff -->
-    <test name="VerifyCharacterShowCard" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="VerifyCharacterShowCard" duration-ms="32569" started-at="2018-07-26T14:54:38Z" finished-at="2018-07-26T14:55:11Z">
       <class name="com.viacom.smoketestscripts.VerifyCharacterShowCard">
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="setup" is-config="true" duration-ms="6138" started-at="2018-07-26T20:24:38Z" finished-at="2018-07-26T20:24:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="VerifyCharacterShowCard(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="VerifyCharacterShowCard" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCharacterShowCard(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="VerifyCharacterShowCard" duration-ms="20751" started-at="2018-07-26T20:24:44Z" data-provider="getData" finished-at="2018-07-26T20:25:05Z">
           <params>
             <param index="0">
               <value>
@@ -281,108 +184,58 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to scroll to ALL CHARACTERS section]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to scroll to ALL CHARACTERS section
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyCharacterShowCard.VerifyCharacterShowCard(VerifyCharacterShowCard.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCharacterShowCard -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
-    </test> <!-- VerifyCharacterShowCard -->
-    <test name="VerifyCharactersInCharactersTray" duration-ms="16" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
-      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharacterShowCard@942a29c]" name="tearDown" is-config="true" duration-ms="5678" started-at="2018-07-26T20:25:05Z" finished-at="2018-07-26T20:25:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="VerifyCharactersInCharactersTray(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="VerifyCharactersInCharactersTray" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharacterShowCard -->
+    </test> <!-- VerifyCharacterShowCard -->
+    <test name="VerifyCharactersInCharactersTray" duration-ms="55014" started-at="2018-07-26T14:55:11Z" finished-at="2018-07-26T14:56:06Z">
+      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="setup" is-config="true" duration-ms="6087" started-at="2018-07-26T20:25:11Z" finished-at="2018-07-26T20:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCharactersInCharactersTray(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="VerifyCharactersInCharactersTray" duration-ms="43371" started-at="2018-07-26T20:25:17Z" data-provider="getData" finished-at="2018-07-26T20:26:00Z">
           <params>
             <param index="0">
               <value>
@@ -390,38 +243,83 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to scroll to ALL CHARACTERS section]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to scroll to ALL CHARACTERS section
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyCharactersInCharactersTray.VerifyCharactersInCharactersTray(VerifyCharactersInCharactersTray.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCharactersInCharactersTray -->
-      </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
-    </test> <!-- VerifyCharactersInCharactersTray -->
-    <test name="VerifyCountOfAssetsInCarousal" duration-ms="16" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
-      <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@2e6a8155]" name="tearDown" is-config="true" duration-ms="5554" started-at="2018-07-26T20:26:00Z" finished-at="2018-07-26T20:26:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
+    </test> <!-- VerifyCharactersInCharactersTray -->
+    <test name="VerifyCountOfAssetsInCarousal" duration-ms="73959" started-at="2018-07-26T14:56:06Z" finished-at="2018-07-26T14:57:20Z">
+      <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="setup" is-config="true" duration-ms="6035" started-at="2018-07-26T20:26:06Z" finished-at="2018-07-26T20:26:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCountOfAssetsInCarousal(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="VerifyCountOfAssetsInCarousal" duration-ms="62419" started-at="2018-07-26T20:26:12Z" data-provider="getData" finished-at="2018-07-26T20:27:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Can't locate an element by this strategy: By.xpath: //*[contains(@class,'ActionBar')][@index='3']]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[contains(@class,'ActionBar')][@index='3']
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$22d95f49.getAttribute(<generated>)
+	at com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal.VerifyCountOfAssetsInCarousal(VerifyCountOfAssetsInCarousal.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -440,79 +338,74 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5b71fb8c (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'
+System info: host: 'IFOCUSODC-PC14', ip: '192.168.1.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, deviceName: Moto E4, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: android, udid: ZW2225DTSJ}, deviceManufacturer: motorola, deviceModel: Moto E (4), deviceName: ZW2225DTSJ, deviceScreenSize: 720x1280, deviceUDID: ZW2225DTSJ, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, takesScreenshot: true, udid: ZW2225DTSJ, warnings: {}, webStorageEnabled: false}
+Session ID: c8922403-8bda-48e4-9619-de8d737d948b
+*** Element info: {Using=xpath, value=//*[contains(@class,'ActionBar')][@index='3']}
+	at sun.reflect.GeneratedConstructorAccessor71.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCountOfAssetsInCarousal(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="VerifyCountOfAssetsInCarousal" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
-
-}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCountOfAssetsInCarousal -->
-      </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
-    </test> <!-- VerifyCountOfAssetsInCarousal -->
-    <test name="VerifyDisplayCardOrderInCarousal" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
-      <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@3c77d488]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@3c77d488]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal@38cee291]" name="tearDown" is-config="true" duration-ms="5502" started-at="2018-07-26T20:27:14Z" finished-at="2018-07-26T20:27:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="VerifyDisplayCardOrderInCarousal(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@3c77d488]" name="VerifyDisplayCardOrderInCarousal" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+      </class> <!-- com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal -->
+    </test> <!-- VerifyCountOfAssetsInCarousal -->
+    <test name="VerifyDisplayCardOrderInCarousal" duration-ms="55028" started-at="2018-07-26T14:57:20Z" finished-at="2018-07-26T14:58:15Z">
+      <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@71ba6d4e]" name="setup" is-config="true" duration-ms="6086" started-at="2018-07-26T20:27:20Z" finished-at="2018-07-26T20:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyDisplayCardOrderInCarousal(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@71ba6d4e]" name="VerifyDisplayCardOrderInCarousal" duration-ms="43405" started-at="2018-07-26T20:27:26Z" data-provider="getData" finished-at="2018-07-26T20:28:09Z">
           <params>
             <param index="0">
               <value>
@@ -522,47 +415,21 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDisplayCardOrderInCarousal -->
-      </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
-    </test> <!-- VerifyDisplayCardOrderInCarousal -->
-    <test name="VerifyFavouritesTrayAndIcon" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
-      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
-        <test-method status="SKIP" signature="VerifyLastViewedUI(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="VerifyLastViewedUI" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
-
-}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLastViewedUI -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Since carousal does not contain 5 cards or contains duplicate cards failing the case]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: Since carousal does not contain 5 cards or contains duplicate cards failing the case
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal.VerifyDisplayCardOrderInCarousal(VerifyDisplayCardOrderInCarousal.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -583,23 +450,90 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDisplayCardOrderInCarousal -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal@71ba6d4e]" name="tearDown" is-config="true" duration-ms="5533" started-at="2018-07-26T20:28:09Z" finished-at="2018-07-26T20:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal -->
+    </test> <!-- VerifyDisplayCardOrderInCarousal -->
+    <test name="VerifyFavouritesTrayAndIcon" duration-ms="24769489" started-at="2018-07-26T14:58:15Z" finished-at="2018-07-26T21:51:04Z">
+      <class name="com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="setup" is-config="true" duration-ms="6091" started-at="2018-07-26T20:28:15Z" finished-at="2018-07-26T20:28:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="FAIL" signature="VerifyLastViewedUI(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="VerifyLastViewedUI" duration-ms="24756512" started-at="2018-07-26T20:28:21Z" data-provider="getData" finished-at="2018-07-27T03:20:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy13.get(Unknown Source)
+	at com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon.VerifyLastViewedUI(VerifyFavouritesTrayAndIcon.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedUI -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon@f78a47e]" name="tearDown" is-config="true" duration-ms="6884" started-at="2018-07-27T03:20:58Z" finished-at="2018-07-27T03:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VerifyFavouritesTrayAndIcon -->
     </test> <!-- VerifyFavouritesTrayAndIcon -->
-    <test name="VerifyHorizontalSwipeMyStuffWatch" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="VerifyHorizontalSwipeMyStuffWatch" duration-ms="60577" started-at="2018-07-26T21:51:04Z" finished-at="2018-07-26T21:52:05Z">
       <class name="com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch">
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="setup" is-config="true" duration-ms="6141" started-at="2018-07-27T03:21:04Z" finished-at="2018-07-27T03:21:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="VerifyHorizontalSwipe(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="VerifyHorizontalSwipe" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyHorizontalSwipe(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="VerifyHorizontalSwipe" duration-ms="48692" started-at="2018-07-27T03:21:11Z" data-provider="getData" finished-at="2018-07-27T03:21:59Z">
           <params>
             <param index="0">
               <value>
@@ -609,59 +543,90 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'
+System info: host: 'IFOCUSODC-PC14', ip: '192.168.1.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, deviceName: Moto E4, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: android, udid: ZW2225DTSJ}, deviceManufacturer: motorola, deviceModel: Moto E (4), deviceName: ZW2225DTSJ, deviceScreenSize: 720x1280, deviceUDID: ZW2225DTSJ, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, takesScreenshot: true, udid: ZW2225DTSJ, warnings: {}, webStorageEnabled: false}
+Session ID: 2a230a83-b926-4b1e-b9af-504fd6cf3450
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@index='0']/android.widget.FrameLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.RelativeLayout[@index='1']/android.widget.TextView[@index='1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'
+System info: host: 'IFOCUSODC-PC14', ip: '192.168.1.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 7.1.1, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.tv.vootkids, autoDismissAlerts: true, deviceName: Moto E4, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: android, udid: ZW2225DTSJ}, deviceManufacturer: motorola, deviceModel: Moto E (4), deviceName: ZW2225DTSJ, deviceScreenSize: 720x1280, deviceUDID: ZW2225DTSJ, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, takesScreenshot: true, udid: ZW2225DTSJ, warnings: {}, webStorageEnabled: false}
+Session ID: 2a230a83-b926-4b1e-b9af-504fd6cf3450
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@index='0']/android.widget.FrameLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.RelativeLayout[@index='1']/android.widget.TextView[@index='1']}
+	at sun.reflect.GeneratedConstructorAccessor71.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch.VerifyHorizontalSwipe(VerifyHorizontalSwipeMyStuffWatch.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHorizontalSwipe -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch@6e9175d8]" name="tearDown" is-config="true" duration-ms="5742" started-at="2018-07-27T03:21:59Z" finished-at="2018-07-27T03:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
+    </test> <!-- VerifyHorizontalSwipeMyStuffWatch -->
+    <test name="VerifyLastViewedUI" duration-ms="165545" started-at="2018-07-26T21:52:05Z" finished-at="2018-07-26T21:54:51Z">
+      <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="setup" is-config="true" duration-ms="6139" started-at="2018-07-27T03:22:05Z" finished-at="2018-07-27T03:22:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-      </class> <!-- com.viacom.smoketestscripts.VerifyHorizontalSwipeMyStuffWatch -->
-    </test> <!-- VerifyHorizontalSwipeMyStuffWatch -->
-    <test name="VerifyLastViewedUI" duration-ms="16" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
-      <class name="com.viacom.smoketestscripts.VerifyLastViewedUI">
-        <test-method status="SKIP" signature="VerifyLastViewedUI(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="VerifyLastViewedUI" duration-ms="16" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="FAIL" signature="VerifyLastViewedUI(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="VerifyLastViewedUI" duration-ms="153605" started-at="2018-07-27T03:22:11Z" data-provider="getData" finished-at="2018-07-27T03:24:45Z">
           <params>
             <param index="0">
               <value>
@@ -671,30 +636,21 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLastViewedUI -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[165: Verify the UI of 'Last Viewed' section in My Stuff Tab is FAIL]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: 165: Verify the UI of 'Last Viewed' section in My Stuff Tab is FAIL
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyLastViewedUI.VerifyLastViewedUI(VerifyLastViewedUI.java:163)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -715,39 +671,45 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        </test-method> <!-- VerifyLastViewedUI -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyLastViewedUI@248e319b]" name="tearDown" is-config="true" duration-ms="5799" started-at="2018-07-27T03:24:45Z" finished-at="2018-07-27T03:24:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VerifyLastViewedUI -->
     </test> <!-- VerifyLastViewedUI -->
-    <test name="Verify1" duration-ms="63" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Verify1" duration-ms="351652" started-at="2018-07-26T21:54:51Z" finished-at="2018-07-26T22:00:42Z">
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="setup" is-config="true" duration-ms="6142" started-at="2018-07-27T03:24:51Z" finished-at="2018-07-27T03:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="loginTest" duration-ms="339762" started-at="2018-07-27T03:24:57Z" data-provider="getData" finished-at="2018-07-27T03:30:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Not navigated back to Switch Profile Screen]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: Not navigated back to Switch Profile Screen
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest.loginTest(VootKidsCreateProfileScreenFunctionalityTest.java:170)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -768,50 +730,45 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="loginTest" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest@74d1dc36]" name="tearDown" is-config="true" duration-ms="5745" started-at="2018-07-27T03:30:36Z" finished-at="2018-07-27T03:30:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest -->
     </test> <!-- Verify1 -->
-    <test name="Verify2" duration-ms="31" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Verify2" duration-ms="713645" started-at="2018-07-26T22:00:42Z" finished-at="2018-07-26T22:12:36Z">
       <class name="com.viacom.smoketestscripts.VootKidsCreateProfile">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="setup" is-config="true" duration-ms="6108" started-at="2018-07-27T03:30:42Z" finished-at="2018-07-27T03:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="loginTest" duration-ms="701684" started-at="2018-07-27T03:30:48Z" data-provider="getData" finished-at="2018-07-27T03:42:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Clicking on Back Arrow not navigated to Switch Profile Screen]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: Clicking on Back Arrow not navigated to Switch Profile Screen
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VootKidsCreateProfile.loginTest(VootKidsCreateProfile.java:464)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -832,50 +789,45 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="loginTest" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VootKidsCreateProfile@712625fd]" name="tearDown" is-config="true" duration-ms="5851" started-at="2018-07-27T03:42:30Z" finished-at="2018-07-27T03:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VootKidsCreateProfile -->
     </test> <!-- Verify2 -->
-    <test name="Verify3" duration-ms="78" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Verify3" duration-ms="82662" started-at="2018-07-26T22:12:36Z" finished-at="2018-07-26T22:13:58Z">
       <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="setup" is-config="true" duration-ms="6138" started-at="2018-07-27T03:42:36Z" finished-at="2018-07-27T03:42:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="loginTest" duration-ms="70764" started-at="2018-07-27T03:42:42Z" data-provider="getData" finished-at="2018-07-27T03:43:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Clicking on Back Arrow not navigated to Switch Profile Screen]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: Clicking on Back Arrow not navigated to Switch Profile Screen
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest.loginTest(VerifyEditProfileFunctionalitytest.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -896,58 +848,49 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="loginTest" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest@8519cb4]" name="tearDown" is-config="true" duration-ms="5757" started-at="2018-07-27T03:43:53Z" finished-at="2018-07-27T03:43:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest -->
     </test> <!-- Verify3 -->
-    <test name="Verify4" duration-ms="0" started-at="2018-07-25T15:14:37Z" finished-at="2018-07-25T15:14:37Z">
+    <test name="Verify4" duration-ms="76764" started-at="2018-07-26T22:13:59Z" finished-at="2018-07-26T22:15:15Z">
       <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest">
-        <test-method status="PASS" signature="suite()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="suite" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:36Z" finished-at="2018-07-25T20:44:36Z">
+        <test-method status="PASS" signature="suite()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="suite" is-config="true" duration-ms="10" started-at="2018-07-26T20:02:27Z" finished-at="2018-07-26T20:02:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suite -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="setup" is-config="true" duration-ms="6142" started-at="2018-07-27T03:43:59Z" finished-at="2018-07-27T03:44:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
-          <exception class="java.lang.IllegalStateException">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="loginTest" duration-ms="64934" started-at="2018-07-27T03:44:05Z" data-provider="getData" finished-at="2018-07-27T03:45:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe]]>
+              <![CDATA[Clicking on Back Arrow not navigated to Switch Profile Screen]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files (x86)\Appium\node.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:261)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.usingDriverExecutable(AppiumServiceBuilder.java:451)
-	at com.viacom.utils.Utilities.startAppiumServer(Utilities.java:311)
-	at com.viacom.smoketestscripts.BaseTestV2.setup(BaseTestV2.java:48)
+              <![CDATA[java.lang.AssertionError: Clicking on Back Arrow not navigated to Switch Profile Screen
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest.loginTest(VerifySwitchProfileFunctionalityTest.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -968,22 +911,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="loginTest" duration-ms="0" started-at="2018-07-25T20:44:37Z" data-provider="getData" finished-at="2018-07-25T20:44:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Password=vinoth123, Runmode=Y, Email=vinothtest@gmail.com}]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="close()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="close" is-config="true" duration-ms="0" started-at="2018-07-25T20:44:37Z" finished-at="2018-07-25T20:44:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="tearDown" is-config="true" duration-ms="5686" started-at="2018-07-27T03:45:10Z" finished-at="2018-07-27T03:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest@2cb4893b]" name="close" is-config="true" duration-ms="0" started-at="2018-07-27T03:45:15Z" finished-at="2018-07-27T03:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

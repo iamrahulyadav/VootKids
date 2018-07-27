@@ -20,12 +20,12 @@ public class VootConstants {
 	public static final String ENVIRONMENT="Production";
 	public static final String BROWSER_NAME="Android";
 	public static final String PLATFORM_NAME="Android";
-	public static final String DEVICE_NAME="Moto G3";
+	public static final String DEVICE_NAME="Moto E4";
 	//public static final String UDID="RS50019e9bc7";
-	public static final String DEVICE_VERSION="6.0.1";
+	public static final String DEVICE_VERSION="7.1.1";
 	public static final String EMAIL_SUBJECT = "Android BBM Login Check: ";
 	public static final String APK_PATH=System.getProperty("user.dir")+"\\apk\\voot_1.6.114_playkit.apk";
-	public static final String HUB_URL="http://127.0.0.3:4725/wd/hub";
+	public static final String HUB_URL="http://127.0.0.1:4723/wd/hub";
 	public static final String XLS_PATH = System.getProperty("user.dir")+"//data//TestData.xlsx";
 	public static String Version;
 	public static final String REPORT_PATH="C:\\Voot_Kids_report\\";

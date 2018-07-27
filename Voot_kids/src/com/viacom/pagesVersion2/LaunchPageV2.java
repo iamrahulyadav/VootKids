@@ -375,7 +375,7 @@ public class LaunchPageV2 extends BasePageV2{
 	public WebElement createProfileBackButton;
 	
 	
-	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Switch profile')]")
+	@FindBy(xpath= "//android.widget.TextView[contains(@text,'Switch profile') or contains(@text,'SWITCH PROFILE')]")
 	public WebElement switchProfileScreenToolBarTitle;
 	
 	

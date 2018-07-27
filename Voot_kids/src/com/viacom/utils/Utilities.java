@@ -307,10 +307,14 @@ public class Utilities extends BaseTestV2{
 		
 		 public static void startAppiumServer() {
 
-			  service=AppiumDriverLocalService.buildService(
+			  service=AppiumDriverLocalService.buildDefaultService();
+					 /* buildService(new AppiumServiceBuilder().usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
+													.withAppiumJS(new File("C:\\Users\\iFocus\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+													.withIPAddress("127.0.0.5").usingPort(4728));*/
+					 /* buildService(
 						new AppiumServiceBuilder().usingDriverExecutable(new File("C:\\Program Files (x86)\\Appium\\node.exe"))
 								.withAppiumJS(new File("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js"))
-								.withIPAddress("127.0.0.3").usingPort(4725));
+								.withIPAddress("127.0.0.3").usingPort(4725));*/
 				if (service.isRunning() == true) {
 					service.stop();
 				} else {
