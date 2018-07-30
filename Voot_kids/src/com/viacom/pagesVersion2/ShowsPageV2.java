@@ -45,6 +45,76 @@ public class ShowsPageV2 extends BasePageV2{
 	public List<WebElement> vootShortsRelatedTitle;
 	
 	
+	//sHOW DETAIL TESTCASE 
+	
+	
+	@FindBy(id="com.tv.vootkids:id/button_back")
+	public WebElement showDetailPageBackButton;
+	
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/imageview_media_image']")
+	public WebElement showDetailPageCharacterImage;
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/button_preview' and @text='PLAY']")
+	public WebElement showDetailPagePlayButton;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/textview_title']")
+	public WebElement showDetailPageShowTitle;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/textview_description']")
+	public WebElement showDetailPageShowInfo;
+	
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/textview_available_langauges']")
+	public WebElement showDetailPageLanguagesAvailableInfo;
+	
+	
+	
+	
+	@FindBy(xpath="//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/btn_download_item']")
+	public WebElement showDetailPageDownlaodEpisodesButton;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/header_text' and @text='DOWNLOAD EPISODES']")
+	public WebElement downloadEpisodesScreenTitle;
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt'  and @text='EPISODES']")
+	public WebElement showDetailPageEpisodesSection;
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt'  and @text='EPISODES']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.ImageView")
+	public WebElement showDetailPageEpisodesSectionFirstVideo;
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt'  and @text='EPISODES']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.ImageView")
+	public List<WebElement> showDetailPageEpisodesSectionVideos;
+
+      @FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt'  and @text='EPISODES']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.TextView[@resource-id='com.tv.vootkids:id/grid_description']")
+	public List<WebElement> showDetailPageEpisodesSectionTitles;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.TextView[@resource-id='com.tv.vootkids:id/grid_description']")
+	public List<WebElement> showDetailPageEpisodesSectionTitlesWay2;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and ( @text='RELATED SHOWS'  or @text='You May Also Like')]")
+	public WebElement showDetailPageEditorialSection;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and  @text='RELATED SHOWS']")
+	public WebElement showDetailPageEditorialSectionRelatedTray;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and  ( @text='YOU MAY ALSO LIKE'  or @text='You May Also Like')")
+	public WebElement showDetailPageEditorialSectionYouMayLikeTray;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and  @text='RELATED SHOWS']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.ImageView")
+	public WebElement showDetailPageEditorialSectionRelatedTrayFirstContent;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and  @text='RELATED SHOWS']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.TextView[@resource-id='com.tv.vootkids:id/grid_title']")
+	public WebElement showDetailPageEditorialSectionRelatedTrayFirstContentTitle;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_types_txt' and  @text='You May Also Like']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.ImageView")
+	public WebElement showDetailPageEditorialSectionYouMayLikeTrayFirstContent;
+	
 	
 	@FindBy(name ="A - Z")
 	public WebElement atozTab;

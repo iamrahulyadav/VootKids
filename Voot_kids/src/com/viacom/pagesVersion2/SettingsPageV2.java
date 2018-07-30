@@ -17,8 +17,12 @@ public class SettingsPageV2 extends BasePageV2 {
 		PageFactory.initElements(driver, this);
 	}
 	
-
-//	///////////// Adding Setting Elements values  //////////////
+	
+	
+//	///////////// Adding Setting Elements Properties  //////////////
+	
+	
+	
 	
 	@FindBy(id ="com.tv.vootkids:id/btn_settings_menu")
 	public WebElement settingsIcon;
@@ -238,11 +242,232 @@ public class SettingsPageV2 extends BasePageV2 {
 	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button2']")
 	public WebElement calendercancelBtn;
 	
+	@FindBy(xpath="//android.widget.TextView[@text='DELETE']")
+	public WebElement delPopDELETETile;
+	
 	@FindBy(xpath="//android.widget.Button[@text='YES']")
 	public WebElement prodelPopYesBtn;
 	
 	@FindBy(xpath="//android.widget.Button[@text='NO']")
 	public WebElement prodelPopNoBtn;
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/button_cancel']")
+	public WebElement delPopCrossBtn;
+	
+	
+	// Settings Device Page Properties
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/btn_profile_menu']")
+	public WebElement deviceBackBtn;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Device']")
+	public WebElement settingsDevice;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='DEVICE']")
+	public WebElement settingsDeviceTile;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Cellular Playback']")
+	public WebElement devicecellerPlyback;
+	
+	@FindBy(xpath="//android.widget.Switch[@resource-id='com.tv.vootkids:id/item_switch']")
+	public WebElement deviceCellplySwitch;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Default Stream Quality']")
+	public WebElement devicedefaultsremquality;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Preferred Language']")
+	public WebElement devicePrefferdLanuage;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Enable Downloads']")
+	public WebElement deviceEnableddownloads;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Cellular Downloads']")
+	public WebElement deviceCelluallerDownlods;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Download Quality']")
+	public WebElement deviceDownloadsQuality;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Notifications']")
+	public WebElement deviceNotifications
+	;
+	@FindBy(xpath="//android.widget.TextView[@text='Allow Casting']")
+	public WebElement deviceAllowcasting
+	;
+	@FindBy(xpath="//android.widget.TextView[@text='Profile PINs']")
+	public WebElement deviceProfilesPINS
+	;
+	@FindBy(xpath="//android.widget.TextView[@text='Clear Cache']")
+	public WebElement deviceClearCache;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Auto']")
+	public WebElement deviceStremQulAuto;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='English']")
+	public WebElement deviceLanubgeEnglish;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='360']")
+	public WebElement deviceDownloadQul360;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/drop_down_text']")
+	public WebElement devicedefaultsremqualityDropDownText;
+	
+	
+	//Help & Support  page 
+	
+	@FindBy(xpath="//android.widget.ImageView[resource-id='com.tv.vootkids:id/btn_profile_menu']")
+	public WebElement helpPagebackBtn;
+	
+	@FindBy(xpath="//android.widget.TextView[@text= \"Help & Support\"]")
+	public WebElement settingsHelpSupport;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='HELP']")
+	public WebElement helpHELPtile;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Contact']")
+	public WebElement helpContactTile;
+	
+	@FindBy(xpath="//android.widget.Button[@resource-id = 'com.tv.vootkids:id/contact_no']")
+	public WebElement helpContactNumBTN;
+	
+	@FindBy(xpath="//android.widget.Button[@resource-id = 'com.tv.vootkids:id/contact_email']")
+	public WebElement helpEmailContactBtn;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"Terms & Conditions\"]")
+	public WebElement helpTemsConditions;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Privacy Policy']")
+	public WebElement helpPrivacyPolicy;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='App Version']")
+	public WebElement helpAppVersion;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"FAQ’s\"]")
+	public WebElement helpFAQs;
+	
+	@FindBy(xpath="//android.widget.ImageView[resource-id='com.tv.vootkids:id/arrow_indicator']")
+	public WebElement helpPageArrow;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Call us free to speak with the support team or email']")
+	public WebElement helpContactSubText;
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/btn_profile_menu']")
+	public WebElement faqsPageBackBtn;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"T&C\"]")
+	public WebElement helpTermsandcondTile;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Privacy Policy']")
+	public WebElement helpPrivacyPolicyTile;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Gmail']")
+	public WebElement helpSupportGmailText;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Email']")
+	public WebElement helpSupportEmailText;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Phone']")
+	public WebElement helpSupportPhoneSubTile;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Skype']")
+	public WebElement helpSupportSkypeSubtile;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='02230303030']")
+	public WebElement helpSupportContactNumber;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='ADD NEW ACCOUNT']")
+	public WebElement helpSupportEmailAddNewAct;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='From']")
+	public WebElement helpGmailSupportFROM;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='To']")
+	public WebElement helpGmailSupportTO;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='Subject']")
+	public WebElement helpGmailSupportSubject;
+	
+	// Share Feature  Functionality 
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Share']")
+	public WebElement settingsShare;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='Facebook']")
+	public WebElement sharefacebook;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='Gmail']")
+	public WebElement shareGmail;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Compose']")
+	public WebElement shareGmailCompose;
+	
+   // Rate Us Page Properties
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Rate Us']")
+	public WebElement settingsRateUS;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"Are you happy with Voot Kids experience?\"]")
+	public WebElement rateUsPopMsg;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Yes']")
+	public WebElement rateUsPopYesText;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='No']")
+	public WebElement rateUsPopNoText;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='SKIP FOR NOW']")
+	public WebElement rateUsPopSkipForNow;
+			
+	@FindBy(xpath="//android.widget.TextView[@text=\"That’s Great!\"]")
+	public WebElement rateusThatsGreat;
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/action_sub_head']")
+	public WebElement rateUsSubhead;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='RATE US']")
+	public WebElement rateUsRATEUS;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='SEND FEEDBACK']")
+	public WebElement rateUsSendfeedBack;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Play Store']")
+	public WebElement rateUsBtnTapplayStore;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Send Feedback']")
+	public WebElement rateUsSendfeedBackPage;
+	
+	@FindBy(xpath="//android.widget.EditText[@resource-id='com.tv.vootkids:id/feed_back_editext']")
+	public WebElement rateUsSendFeedBackEditText;
+	
+	@FindBy(xpath="//android.widget.ImageView[@resource-id='com.tv.vootkids:id/send_btn']")
+	public WebElement rateUsSendFeedBackSendBtn;
+	
+	
+//	///////////// Ending Setting Elements Properties  //////////////
+	
+	
+	@FindBy(id ="com.tv.v18.viola:id/edit_profile_txt")
+	public WebElement editProfile;
+	
+	
+	@FindBy(id ="com.tv.v18.viola:id/change_password_txt")
+	public WebElement profileChangepassword;
+	
+	
+	@FindBy(id ="com.tv.v18.viola:id/kids_zone_switch")
+	public WebElement kidsZoneSwitch;
+	
+
+	@FindBy(id ="com.tv.v18.viola:id/change_pin_txt")
+	public WebElement parentalPasswordChange;
+	
+	@FindBy(id ="com.tv.v18.viola:id/download_on_wifi_switch")
+	public WebElement downloadOnWifiSwitch;
+	
+	@FindBy(id ="com.tv.v18.viola:id/language_preferences_txt")
+	public WebElement languagePreferencesOption;
+	
+	@FindBy(id ="com.tv.v18.viola:id/clear_record_lyt")
+	public WebElement clearHistoryOption;
 	
 	
 	

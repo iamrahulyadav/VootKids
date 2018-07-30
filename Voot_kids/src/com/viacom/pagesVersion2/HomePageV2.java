@@ -51,6 +51,10 @@ public class HomePageV2 extends BasePageV2 {
 	@FindBy(xpath="//*[contains(@id='com.tv.vootkids:id/empty_view')]")
 	public WebElement onNowNothingHere;
 	
+	
+
+	@FindBy(className="android.widget.ProgressBar")
+	public List<WebElement> progressBar;	
 	 
 	 @FindBy(xpath="//android.widget.HorizontalScrollView[@resource-id='com.tv.vootkids:id/segmented_tray_tab']//android.widget.TextView[@text='Channels']")
 		public WebElement watchTab_channels;
@@ -344,7 +348,115 @@ public class HomePageV2 extends BasePageV2 {
 	@FindBy(xpath="//android.widget.TextView[@resource-id='com.tv.vootkids:id/recent_clear_txt']")
 	public WebElement lastViewedClear;
 
+	@FindBy(id = "com.tv.vootkids:id/player_title")
+	public WebElement videoPlayerTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/player_title")
+	public WebElement videoPlayersettings;
+
+	@FindBy(id = "com.tv.vootkids:id/favourite_button")
+	public WebElement videoPlayerfavouriteBtn;
+
+	@FindBy(id = "com.tv.vootkids:id/favourite_button")
+	public WebElement videoPlayerclose;
+
+	@FindBy(id = "com.tv.vootkids:id/player_center_control")
+	public WebElement playercenterControl;
+
+	@FindBy(id = "com.tv.vootkids:id/player_skin_container")
+	public WebElement playerskin;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_description")
+	public WebElement EpnumAndDescription;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_title")
+	public WebElement contentTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_item_category")
+	public WebElement contentitemCategory;
+
+	@FindBy(id = "com.tv.vootkids:id/grid_video_duration")
+	public WebElement contentDuration;
 	
+	@FindBy(xpath = "//*[contains(@class,'ActionBar')][@index='4']")
+	public WebElement search;
+
+	@FindBy(id = "com.tv.vootkids:id/search_edittext")
+	public WebElement searchTextBox;
+
+	@FindBy(id = "com.tv.vootkids:id/voice_button")
+	public WebElement voiceBtn;
+
+	@FindBy(id = "com.tv.vootkids:id/button_surprise_me")
+	public WebElement surprisemeBtn;
+
+	@FindBy(id = "com.tv.vootkids:id/clear_icon")
+	public WebElement searchClear;
+	
+	@FindBy(id = "com.tv.vootkids:id/button_back")
+	public WebElement backButton;
+
+	@FindBy(id = "com.tv.vootkids:id/checkbox_fav_selector")
+	public WebElement favIcon;
+
+	@FindBy(id = "com.tv.vootkids:id/textview_title")
+	public WebElement audTitle;
+
+	@FindBy(id = "com.tv.vootkids:id/author_container")
+	public WebElement audauthorContainer;
+
+	@FindBy(id = "com.tv.vootkids:id/textview_author_name")
+	public WebElement audauthorname;
+
+	@FindBy(id = "com.tv.vootkids:id/narrated_by_container")
+	public WebElement naratorContainer;
+
+	@FindBy(id = "com.tv.vootkids:id/textview_narrated_by_name")
+	public WebElement naratorname;
+
+	@FindBy(id = "com.tv.vootkids:id/textview_description")
+	public WebElement description;
+
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'22m')]")
+	public WebElement duration;
+
+	@FindBy(id = "com.tv.vootkids:id/download_status_imageview")
+	public WebElement downloadIcon;
+
+	@FindBy(id = "com.tv.vootkids:id/download_status_textview")
+	public WebElement downloadAudioBookText;
+
+	@FindBy(id = "com.tv.vootkids:id/recent_types_txt")
+	public WebElement recentTypeTab;
+
+	@FindBy(id = "com.tv.vootkids:id/btn_download_item")
+	public WebElement downloadedItem;
+
+	@FindBy(id = "com.tv.vootkids:id/radio_btn_low")
+	public WebElement lowqualityDownload;
+
+	@FindBy(id = "com.tv.vootkids:id/radio_btn_medium")
+	public WebElement midqualityDownload;
+
+	@FindBy(id = "com.tv.vootkids:id/radio_btn_high")
+	public WebElement highqualityDownload;
+
+	@FindBy(id = "com.tv.vootkids:id/positive_btn")
+	public WebElement allowDownload;
+
+	@FindBy(id = "com.tv.vootkids:id/negative_btn")
+	public WebElement cancelDownload;
+
+	@FindBy(id = "com.tv.vootkids:id/download_status_textview")
+	public WebElement DownloadStatus;
+
+	@FindBy(xpath = "//android.widget.Button[@text='SEE ALL']")
+	public WebElement traySeeAll;
+
+	//Episodes related properties
+	@FindBy(xpath = "//*[contains(@class,'ActionBar')][@index='1']")
+	public WebElement watchtab;
+
 	
 	
 	//Login
@@ -1289,6 +1401,38 @@ public static void signuptestCaseIncluded() throws Exception {
 			
 		}
 	}catch (Exception e) {}
+}
+public void verifyAndProgressBar() throws Exception
+{
+
+
+ 
+    
+	for(int k=0;k<10;k++) 
+{ 
+		 if(progressBar.size()==0)	
+       break;
+     	Thread.sleep(3000);
+}        
+
+
+    
+if(progressBar.size()>0)
+  {
+	          for(int k=0;k<10;k++) 
+        { 
+       //  if(!Utilities.explicitWaitVisible(driver, progress,5))
+     		 if(progressBar.size()==0)	
+           break;
+     		 else
+     			 Thread.sleep(5000);
+        }   
+             
+         if(progressBar.size()>0)
+	   reportFail("Video not loaded within 45 seconds");
+  }
+
+
 }
 
 }

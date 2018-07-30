@@ -34,6 +34,9 @@ public class WatchPageV2 extends BasePageV2{
 	@FindBy(xpath="")
 	public WebElement allCharacters;
 	
+	@FindBy(xpath="//android.widget.TextView[@text='ALL CHARACTERS']//ancestor::android.view.ViewGroup[@resource-id='com.tv.vootkids:id/parent_layout']//android.support.v7.widget.RecyclerView[@resource-id='com.tv.vootkids:id/recent_recycler_view']//android.widget.ImageView")
+	public WebElement allCharactersFirstShow;
+	
 	@FindBy(xpath="//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/parent_for_carousal']//android.widget.LinearLayout[@resource-id='com.tv.vootkids:id/ln_item_container']")
 	public WebElement firstItemInCarousal;
 	
